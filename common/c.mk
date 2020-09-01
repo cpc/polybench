@@ -3,7 +3,7 @@
 #
 ATI_DISPLAY    = DISPLAY=:0.0
 
-GCC            = gcc
+GCC            = clang
 ICC            = icc
 HMPP           = hmpp #--nvcc-options -arch,sm_10
 

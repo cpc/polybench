@@ -4,7 +4,7 @@
  *
  * Contact:
  * William Killian <killian@udel.edu>
- * 
+ *
  * Copyright 2013, The University of Delaware
  */
 #include <stdio.h>
@@ -23,11 +23,11 @@
 /* Array initialization. */
 static
 void init_array(int n,
-		DATA_TYPE POLYBENCH_1D(x1,N,n),
-		DATA_TYPE POLYBENCH_1D(x2,N,n),
-		DATA_TYPE POLYBENCH_1D(y_1,N,n),
-		DATA_TYPE POLYBENCH_1D(y_2,N,n),
-		DATA_TYPE POLYBENCH_2D(A,N,N,n,n))
+        DATA_TYPE POLYBENCH_1D(x1,N,n),
+        DATA_TYPE POLYBENCH_1D(x2,N,n),
+        DATA_TYPE POLYBENCH_1D(y_1,N,n),
+        DATA_TYPE POLYBENCH_1D(y_2,N,n),
+        DATA_TYPE POLYBENCH_2D(A,N,N,n,n))
 {
   int i, j;
 
@@ -38,7 +38,7 @@ void init_array(int n,
       y_1[i] = ((DATA_TYPE) i + 3) / n;
       y_2[i] = ((DATA_TYPE) i + 4) / n;
       for (j = 0; j < n; j++)
-	A[i][j] = ((DATA_TYPE) i*j) / N;
+    A[i][j] = ((DATA_TYPE) i*j) / N;
     }
 }
 
@@ -47,8 +47,8 @@ void init_array(int n,
    Can be used also to check the correctness of the output. */
 static
 void print_array(int n,
-		 DATA_TYPE POLYBENCH_1D(x1,N,n),
-		 DATA_TYPE POLYBENCH_1D(x2,N,n))
+         DATA_TYPE POLYBENCH_1D(x1,N,n),
+         DATA_TYPE POLYBENCH_1D(x2,N,n))
 
 {
   int i;
@@ -69,14 +69,14 @@ void print_array(int n,
 #pragma hmpp & target=CUDA:OPENCL
 static
 void kernel_mvt(int n,
-		DATA_TYPE POLYBENCH_1D(x1,N,n),
-		DATA_TYPE POLYBENCH_1D(x2,N,n),
-		DATA_TYPE POLYBENCH_1D(y_1,N,n),
-		DATA_TYPE POLYBENCH_1D(y_2,N,n),
-		DATA_TYPE POLYBENCH_2D(A,N,N,n,n))
+        DATA_TYPE POLYBENCH_1D(x1,N,n),
+        DATA_TYPE POLYBENCH_1D(x2,N,n),
+        DATA_TYPE POLYBENCH_1D(y_1,N,n),
+        DATA_TYPE POLYBENCH_1D(y_2,N,n),
+        DATA_TYPE POLYBENCH_2D(A,N,N,n,n))
 {
   int i, j;
-  
+
   for (i = 0; i < _PB_N; i++)
     for (j = 0; j < _PB_N; j++)
       x1[i] = x1[i] + A[i][j] * y_1[j];
@@ -109,32 +109,32 @@ int main(int argc, char** argv)
 
   /* Initialize array(s). */
   init_array (n,
-	      POLYBENCH_ARRAY(x1),
-	      POLYBENCH_ARRAY(x2),
-	      POLYBENCH_ARRAY(y_1),
-	      POLYBENCH_ARRAY(y_2),
-	      POLYBENCH_ARRAY(A));
-  
+          POLYBENCH_ARRAY(x1),
+          POLYBENCH_ARRAY(x2),
+          POLYBENCH_ARRAY(y_1),
+          POLYBENCH_ARRAY(y_2),
+          POLYBENCH_ARRAY(A));
+
   #pragma hmpp mvt advancedload, args[x1;x2;y_1;y_2;A]
-  
+
   /* Start timer. */
   polybench_start_instruments;
 
   /* Run kernel. */
   #pragma hmpp mvt callsite
   kernel_mvt (n,
-	      POLYBENCH_ARRAY(x1),
-	      POLYBENCH_ARRAY(x2),
-	      POLYBENCH_ARRAY(y_1),
-	      POLYBENCH_ARRAY(y_2),
-	      POLYBENCH_ARRAY(A));
+          POLYBENCH_ARRAY(x1),
+          POLYBENCH_ARRAY(x2),
+          POLYBENCH_ARRAY(y_1),
+          POLYBENCH_ARRAY(y_2),
+          POLYBENCH_ARRAY(A));
 
   /* Stop and print timer. */
   polybench_stop_instruments;
   polybench_print_instruments;
 
   #pragma hmpp mvt delegatedstore, args[x1;x2]
-  
+
   /* Prevent dead-code elimination. All live-out data must be printed
      by the function call in argument. */
   polybench_prevent_dce(print_array(n, POLYBENCH_ARRAY(x1), POLYBENCH_ARRAY(x2)));

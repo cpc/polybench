@@ -24,7 +24,7 @@
 #define POLYBENCH_TIME 1
 
 //select the OpenCL device to use (can be GPU, CPU, or Accelerator such as Intel Xeon Phi)
-#define OPENCL_DEVICE_SELECTION CL_DEVICE_TYPE_GPU
+#define OPENCL_DEVICE_SELECTION CL_DEVICE_TYPE_CPU
 
 #include "correlation.h"
 #include <polybench.h>
@@ -50,7 +50,7 @@ char str_temp[1024];
 #define EPS 0.005
 
 cl_platform_id platform_id;
-cl_device_id device_id;   
+cl_device_id device_id;
 cl_uint num_devices;
 cl_uint num_platforms;
 cl_int errcode;
@@ -83,11 +83,11 @@ void compareResults(int m, int n, DATA_TYPE POLYBENCH_2D(symmat, M, N, m, n), DA
 		{
 			if (percentDiff(symmat[i][j], symmat_outputFromGpu[i][j]) > PERCENT_DIFF_ERROR_THRESHOLD)
 			{
-				fail++;		
+				fail++;
 			}
 		}
 	}
-	
+
 	// print results
 	printf("Non-Matching CPU-GPU Outputs Beyond Error Threshold of %4.2f Percent: %d\n", PERCENT_DIFF_ERROR_THRESHOLD, fail);
 }
@@ -110,19 +110,19 @@ void read_cl_file()
 void init_arrays(int m, int n, DATA_TYPE POLYBENCH_2D(data, M, N, m, n))
 {
 	int i, j;
-	
-	for (i=0; i < m; i++) 
+
+	for (i=0; i < m; i++)
 	{
-    		for (j=0; j < n; j++) 
+    		for (j=0; j < n; j++)
 		{
-       		data[i][j] = ((DATA_TYPE) i*j)/ M;	
+       		data[i][j] = ((DATA_TYPE) i*j)/ M;
        	}
     	}
 }
 
 
 void cl_initialization()
-{	
+{
 	// Get platform and device information
 	errcode = clGetPlatformIDs(1, &platform_id, &num_platforms);
 	if(errcode == CL_SUCCESS) printf("number of platforms is %d\n",num_platforms);
@@ -143,11 +143,11 @@ void cl_initialization()
 	errcode = clGetDeviceInfo(device_id,CL_DEVICE_NAME, sizeof(str_temp), str_temp,NULL);
 	if(errcode == CL_SUCCESS) printf("device name is %s\n",str_temp);
 	else printf("Error getting device name\n");
-	
+
 	// Create an OpenCL context
 	clGPUContext = clCreateContext( NULL, 1, &device_id, NULL, NULL, &errcode);
 	if(errcode != CL_SUCCESS) printf("Error in creating context\n");
- 
+
 	//Create a command-queue
 	clCommandQue = clCreateCommandQueue(clGPUContext, device_id, 0, &errcode);
 	if(errcode != CL_SUCCESS) printf("Error in creating command queue\n");
@@ -160,7 +160,7 @@ void cl_mem_init(DATA_TYPE POLYBENCH_2D(data,M,N,m,n), DATA_TYPE POLYBENCH_1D(me
 	symmat_mem_obj = clCreateBuffer(clGPUContext, CL_MEM_READ_WRITE, sizeof(DATA_TYPE) * M * N, NULL, &errcode);
 	stddev_mem_obj = clCreateBuffer(clGPUContext, CL_MEM_READ_WRITE, sizeof(DATA_TYPE) * M, NULL, &errcode);
 	mean_mem_obj = clCreateBuffer(clGPUContext, CL_MEM_READ_WRITE, sizeof(DATA_TYPE) * M, NULL, &errcode);
-		
+
 	if(errcode != CL_SUCCESS) printf("Error in creating buffers\n");
 
 	errcode = clEnqueueWriteBuffer(clCommandQue, data_mem_obj, CL_TRUE, 0, sizeof(DATA_TYPE) * M * N, data, 0, NULL, NULL);
@@ -181,7 +181,7 @@ void cl_load_prog()
 	// Build the program
 	errcode = clBuildProgram(clProgram, 1, &device_id, NULL, NULL, NULL);
 	if(errcode != CL_SUCCESS) printf("Error in building program\n");
-		
+
 	// Create the OpenCL kernel
 	clKernel_mean = clCreateKernel(clProgram, "mean_kernel", &errcode);
 	if(errcode != CL_SUCCESS) printf("Error in creating kernel1\n");
@@ -230,7 +230,7 @@ void cl_launch_kernel(int m, int n)
 
 	/* Start timer. */
   	polybench_start_instruments;
-	
+
 	// Set the arguments of the kernel
 	errcode =  clSetKernelArg(clKernel_mean, 0, sizeof(cl_mem), (void *)&mean_mem_obj);
 	errcode |= clSetKernelArg(clKernel_mean, 1, sizeof(cl_mem), (void *)&data_mem_obj);
@@ -253,7 +253,7 @@ void cl_launch_kernel(int m, int n)
 	errcode |= clSetKernelArg(clKernel_std, 5, sizeof(int), (void *)&m);
 	errcode |= clSetKernelArg(clKernel_std, 6, sizeof(int), (void *)&n);
 	if(errcode != CL_SUCCESS) printf("Error in seting arguments2\n");
- 
+
 	// Execute the OpenCL kernel
 	errcode = clEnqueueNDRangeKernel(clCommandQue, clKernel_std, 1, NULL, globalWorkSize_Kernel2, localWorkSize_Kernel2, 0, NULL, NULL);
 	if(errcode != CL_SUCCESS) printf("Error in launching kernel2\n");
@@ -267,13 +267,13 @@ void cl_launch_kernel(int m, int n)
 	errcode |= clSetKernelArg(clKernel_reduce, 4, sizeof(int), (void *)&m);
 	errcode |= clSetKernelArg(clKernel_reduce, 5, sizeof(int), (void *)&n);
 	if(errcode != CL_SUCCESS) printf("Error in seting arguments3\n");
- 
+
 	// Execute the OpenCL kernel
 	errcode = clEnqueueNDRangeKernel(clCommandQue, clKernel_reduce, 2, NULL, globalWorkSize_Kernel3, localWorkSize_Kernel3, 0, NULL, NULL);
 	if(errcode != CL_SUCCESS) printf("Error in launching kernel3\n");
 	clEnqueueBarrier(clCommandQue);
 
-	// Set the arguments of the kernel	
+	// Set the arguments of the kernel
 	errcode =  clSetKernelArg(clKernel_corr, 0, sizeof(cl_mem), (void *)&symmat_mem_obj);
 	errcode |= clSetKernelArg(clKernel_corr, 1, sizeof(cl_mem), (void *)&data_mem_obj);
 	errcode |= clSetKernelArg(clKernel_corr, 2, sizeof(int), (void *)&m);
@@ -320,9 +320,9 @@ void cl_clean_up()
 void correlation(int m, int n, DATA_TYPE POLYBENCH_2D(data, M, N, m, n), DATA_TYPE POLYBENCH_1D(mean, M, m), DATA_TYPE POLYBENCH_1D(stddev, M, m),
 		DATA_TYPE POLYBENCH_2D(symmat, M, N, m, n))
 {
-	int i, j, j1, j2;	
-	
-	// Determine mean of column vectors of input data matrix 
+	int i, j, j1, j2;
+
+	// Determine mean of column vectors of input data matrix
   	for (j = 0; j < _PB_M; j++)
    	{
   		mean[j] = 0.0;
@@ -331,26 +331,26 @@ void correlation(int m, int n, DATA_TYPE POLYBENCH_2D(data, M, N, m, n), DATA_TY
 		{
 			mean[j] += data[i][j];
    		}
-		
+
 		mean[j] /= (DATA_TYPE)FLOAT_N;
    	}
 
-	// Determine standard deviations of column vectors of data matrix. 
+	// Determine standard deviations of column vectors of data matrix.
   	for (j = 0; j < _PB_M; j++)
    	{
    		stddev[j] = 0.0;
-      
+
 		for (i = 0; i < _PB_N; i++)
 		{
 			stddev[j] += (data[i][j] - mean[j]) * (data[i][j] - mean[j]);
 		}
-		
+
 		stddev[j] /= FLOAT_N;
 		stddev[j] = sqrt_of_array_cell(stddev, j);
 		stddev[j] = stddev[j] <= EPS ? 1.0 : stddev[j];
 	}
 
- 	// Center and reduce the column vectors. 
+ 	// Center and reduce the column vectors.
   	for (i = 0; i < _PB_N; i++)
 	{
 		for (j = 0; j < _PB_M; j++)
@@ -360,11 +360,11 @@ void correlation(int m, int n, DATA_TYPE POLYBENCH_2D(data, M, N, m, n), DATA_TY
 		}
 	}
 
-	// Calculate the m * m correlation matrix. 
+	// Calculate the m * m correlation matrix.
   	for (j1 = 0; j1 < _PB_M-1; j1++)
-	{	
+	{
 		symmat[j1][j1] = 1.0;
-    
+
 		for (j2 = j1+1; j2 < _PB_M; j2++)
 		{
 	  		symmat[j1][j2] = 0.0;
@@ -377,7 +377,7 @@ void correlation(int m, int n, DATA_TYPE POLYBENCH_2D(data, M, N, m, n), DATA_TY
 	  		symmat[j2][j1] = symmat[j1][j2];
 		}
 	}
- 
+
 	symmat[M-1][M-1] = 1.0;
 }
 
@@ -401,7 +401,7 @@ void print_array(int m,
 
 
 int main(int argc, char *argv[])
-{	
+{
 	int m = M;
 	int n = N;
 
@@ -410,7 +410,7 @@ int main(int argc, char *argv[])
   	POLYBENCH_1D_ARRAY_DECL(stddev,DATA_TYPE,M,m);
 	POLYBENCH_2D_ARRAY_DECL(symmat,DATA_TYPE,M,N,m,n);
   	POLYBENCH_2D_ARRAY_DECL(symmat_outputFromGpu,DATA_TYPE,M,N,m,n);
-  	
+
 	init_arrays(m, n, POLYBENCH_ARRAY(data));
 
 	read_cl_file();
@@ -429,7 +429,7 @@ int main(int argc, char *argv[])
 	  	polybench_start_instruments;
 
 		correlation(m, n, POLYBENCH_ARRAY(data), POLYBENCH_ARRAY(mean), POLYBENCH_ARRAY(stddev), POLYBENCH_ARRAY(symmat));
-	
+
 		/* Stop and print timer. */
 		printf("CPU Time in seconds:\n");
 	  	polybench_stop_instruments;
@@ -450,7 +450,7 @@ int main(int argc, char *argv[])
 	POLYBENCH_FREE_ARRAY(symmat_outputFromGpu);
 
 	cl_clean_up();
-	
+
 	return 0;
 }
 
