@@ -77,25 +77,25 @@
 /* Macros to allocate heap arrays.
    Example:
    polybench_alloc_2d_array(N, M, double) => allocates N x M x sizeof(double)
-					  and returns a pointer to the 2d array
+                      and returns a pointer to the 2d array
  */
-# define POLYBENCH_ALLOC_1D_ARRAY(n1, type)	\
+# define POLYBENCH_ALLOC_1D_ARRAY(n1, type) \
   (type(*)[n1 + POLYBENCH_PADDING_FACTOR])polybench_alloc_data (n1 + POLYBENCH_PADDING_FACTOR, sizeof(type))
-# define POLYBENCH_ALLOC_2D_ARRAY(n1, n2, type)		\
+# define POLYBENCH_ALLOC_2D_ARRAY(n1, n2, type)     \
   (type(*)[n1 + POLYBENCH_PADDING_FACTOR][n2 + POLYBENCH_PADDING_FACTOR])polybench_alloc_data ((n1 + POLYBENCH_PADDING_FACTOR) * (n2 + POLYBENCH_PADDING_FACTOR), sizeof(type))
-# define POLYBENCH_ALLOC_3D_ARRAY(n1, n2, n3, type)		\
+# define POLYBENCH_ALLOC_3D_ARRAY(n1, n2, n3, type)     \
   (type(*)[n1 + POLYBENCH_PADDING_FACTOR][n2 + POLYBENCH_PADDING_FACTOR][n3 + POLYBENCH_PADDING_FACTOR])polybench_alloc_data ((n1 + POLYBENCH_PADDING_FACTOR) * (n2 + POLYBENCH_PADDING_FACTOR) * (n3 + POLYBENCH_PADDING_FACTOR), sizeof(type))
-# define POLYBENCH_ALLOC_4D_ARRAY(n1, n2, n3, n4, type)			\
+# define POLYBENCH_ALLOC_4D_ARRAY(n1, n2, n3, n4, type)         \
   (type(*)[n1 + POLYBENCH_PADDING_FACTOR][n2 + POLYBENCH_PADDING_FACTOR][n3 + POLYBENCH_PADDING_FACTOR][n4 + POLYBENCH_PADDING_FACTOR])polybench_alloc_data ((n1 + POLYBENCH_PADDING_FACTOR) * (n2 + POLYBENCH_PADDING_FACTOR) * (n3 + POLYBENCH_PADDING_FACTOR) * (n4 + POLYBENCH_PADDING_FACTOR), sizeof(type))
-# define POLYBENCH_ALLOC_5D_ARRAY(n1, n2, n3, n4, n5, type)		\
+# define POLYBENCH_ALLOC_5D_ARRAY(n1, n2, n3, n4, n5, type)     \
   (type(*)[n1 + POLYBENCH_PADDING_FACTOR][n2 + POLYBENCH_PADDING_FACTOR][n3 + POLYBENCH_PADDING_FACTOR][n4 + POLYBENCH_PADDING_FACTOR][n5 + POLYBENCH_PADDING_FACTOR])polybench_alloc_data ((n1 + POLYBENCH_PADDING_FACTOR) * (n2 + POLYBENCH_PADDING_FACTOR) * (n3 + POLYBENCH_PADDING_FACTOR) * (n4 + POLYBENCH_PADDING_FACTOR) * (n5 + POLYBENCH_PADDING_FACTOR), sizeof(type))
 
 /* Macros for array declaration. */
 # ifndef POLYBENCH_STACK_ARRAYS
-#  define POLYBENCH_1D_ARRAY_DECL(var, type, dim1, ddim1)		\
+#  define POLYBENCH_1D_ARRAY_DECL(var, type, dim1, ddim1)       \
   type POLYBENCH_1D(POLYBENCH_DECL_VAR(var), dim1, ddim1); \
   var = POLYBENCH_ALLOC_1D_ARRAY(POLYBENCH_C99_SELECT(dim1, ddim1), type);
-#  define POLYBENCH_2D_ARRAY_DECL(var, type, dim1, dim2, ddim1, ddim2)	\
+#  define POLYBENCH_2D_ARRAY_DECL(var, type, dim1, dim2, ddim1, ddim2)  \
   type POLYBENCH_2D(POLYBENCH_DECL_VAR(var), dim1, dim2, ddim1, ddim2); \
   var = POLYBENCH_ALLOC_2D_ARRAY(POLYBENCH_C99_SELECT(dim1, ddim1), POLYBENCH_C99_SELECT(dim2, ddim2), type);
 #  define POLYBENCH_3D_ARRAY_DECL(var, type, dim1, dim2, dim3, ddim1, ddim2, ddim3) \
@@ -108,9 +108,9 @@
   type POLYBENCH_5D(POLYBENCH_DECL_VAR(var), dim1, dim2, dim3, dim4, dim5, ddim1, ddim2, ddim3, ddim4, ddim5); \
   var = POLYBENCH_ALLOC_5D_ARRAY(POLYBENCH_C99_SELECT(dim1, ddim1), POLYBENCH_C99_SELECT(dim2, ddim2), POLYBENCH_C99_SELECT(dim3, ddim3), POLYBENCH_C99_SELECT(dim4, ddim4), POLYBENCH_C99_SELECT(dim5, ddim5), type);
 # else
-#  define POLYBENCH_1D_ARRAY_DECL(var, type, dim1, ddim1)		\
+#  define POLYBENCH_1D_ARRAY_DECL(var, type, dim1, ddim1)       \
   type POLYBENCH_1D(POLYBENCH_DECL_VAR(var), dim1, ddim1);
-#  define POLYBENCH_2D_ARRAY_DECL(var, type, dim1, dim2, ddim1, ddim2)	\
+#  define POLYBENCH_2D_ARRAY_DECL(var, type, dim1, dim2, ddim1, ddim2)  \
   type POLYBENCH_2D(POLYBENCH_DECL_VAR(var), dim1, dim2, ddim1, ddim2);
 #  define POLYBENCH_3D_ARRAY_DECL(var, type, dim1, dim2, dim3, ddim1, ddim2, ddim3) \
   type POLYBENCH_3D(POLYBENCH_DECL_VAR(var), dim1, dim2, dim3, ddim1, ddim2, ddim3);
@@ -128,8 +128,8 @@
 #  define POLYBENCH_DCE_ONLY_CODE
 # endif
 
-# define polybench_prevent_dce(func)		\
-  POLYBENCH_DCE_ONLY_CODE			\
+# define polybench_prevent_dce(func)        \
+  POLYBENCH_DCE_ONLY_CODE           \
   func
 
 
@@ -145,21 +145,21 @@ extern const unsigned int polybench_papi_eventlist[];
 #  undef polybench_start_instruments
 #  undef polybench_stop_instruments
 #  undef polybench_print_instruments
-#  define polybench_set_papi_thread_report(x)	\
+#  define polybench_set_papi_thread_report(x)   \
    polybench_papi_counters_threadid = x;
-#  define polybench_start_instruments				\
-  polybench_prepare_instruments();				\
-  polybench_papi_init();					\
-  int evid;							\
-  for (evid = 0; polybench_papi_eventlist[evid] != 0; evid++)	\
-    {								\
-      if (polybench_papi_start_counter(evid))			\
-	continue;						\
+#  define polybench_start_instruments               \
+  polybench_prepare_instruments();              \
+  polybench_papi_init();                    \
+  int evid;                         \
+  for (evid = 0; polybench_papi_eventlist[evid] != 0; evid++)   \
+    {                               \
+      if (polybench_papi_start_counter(evid))           \
+    continue;                       \
 
-#  define polybench_stop_instruments		\
-      polybench_papi_stop_counter(evid);	\
-    }						\
-  polybench_papi_close();			\
+#  define polybench_stop_instruments        \
+      polybench_papi_stop_counter(evid);    \
+    }                       \
+  polybench_papi_close();           \
 
 #  define polybench_print_instruments polybench_papi_print();
 # endif
