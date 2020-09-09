@@ -18,5 +18,5 @@
 
 # Temp Files
 *~
-#*#
-
+*.dot
+*.ll
