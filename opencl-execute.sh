@@ -1,5 +1,6 @@
 # Execute all OpenCL kernels and save emitted remarks to file where each kernel
 # reside.
+export POCL_VECTORIZER_REMARKS=1
 rm -rf $POCL_CACHE_DIR
 cwd=$(pwd)
 echo "covariance"
