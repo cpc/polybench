@@ -67,8 +67,8 @@ echo "atax"
 cd ${CWD}/OpenCL/linear-algebra/kernels/atax
 ${CLANG_COMMAND} atax.cl
 ${OPT_CFG_COMMAND} atax.ll > /dev/null
-${DOT_COMMAND} .atax_kernel1.dot -o mvt_kernel1.pdf
-${DOT_COMMAND} .atax_kernel2.dot -o mvt_kernel2.pdf
+${DOT_COMMAND} .atax_kernel1.dot -o atax_kernel1.pdf
+${DOT_COMMAND} .atax_kernel2.dot -o atax_kernel2.pdf
 echo "gesummv"
 cd ${CWD}/OpenCL/linear-algebra/kernels/gesummv
 ${CLANG_COMMAND} gesummv.cl
