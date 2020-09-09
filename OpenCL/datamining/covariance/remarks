@@ -1,0 +1,1418 @@
+<unknown>:0:0: _Z12get_local_idj inlined into _Z13get_global_idj with (cost=always): always inliner
+<unknown>:0:0: _Z12get_local_idj inlined into _Z13get_global_idj with (cost=always): always inliner
+<unknown>:0:0: _Z12get_local_idj inlined into _Z13get_global_idj with (cost=always): always inliner
+<unknown>:0:0: _Z13get_global_idj inlined into mean_kernel with (cost=always): always inliner
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: loop not vectorized: value that could not be identified as reduction is used outside the loop
+<unknown>:0:0: loop not vectorized
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: unrolled loop by a factor of 4 with run-time trip count
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: _pocl_kernel_mean_kernel inlined into _pocl_kernel_mean_kernel_workgroup with (cost=always): always inliner
+<unknown>:0:0: _pocl_kernel_mean_kernel inlined into _pocl_kernel_mean_kernel_workgroup_fast with (cost=always): always inliner
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: failed to move load with loop-invariant address because the loop may invalidate its value
+<unknown>:0:0: failed to move load with loop-invariant address because the loop may invalidate its value
+<unknown>:0:0: failed to move load with loop-invariant address because the loop may invalidate its value
+<unknown>:0:0: Moving accesses to memory location out of the loop
+<unknown>:0:0: Moving accesses to memory location out of the loop
+<unknown>:0:0: Moving accesses to memory location out of the loop
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: failed to move load with loop-invariant address because the loop may invalidate its value
+<unknown>:0:0: failed to move load with loop-invariant address because the loop may invalidate its value
+<unknown>:0:0: failed to move load with loop-invariant address because the loop may invalidate its value
+<unknown>:0:0: Moving accesses to memory location out of the loop
+<unknown>:0:0: Moving accesses to memory location out of the loop
+<unknown>:0:0: Moving accesses to memory location out of the loop
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking zext
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: hoisting shl
+<unknown>:0:0: hoisting icmp
+<unknown>:0:0: hoisting sext
+<unknown>:0:0: hoisting zext
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting and
+<unknown>:0:0: hoisting icmp
+<unknown>:0:0: hoisting sub
+<unknown>:0:0: hoisting icmp
+<unknown>:0:0: load eliminated by PRE
+<unknown>:0:0: load of type float eliminated
+<unknown>:0:0: load of type i64 eliminated
+<unknown>:0:0: load of type float eliminated
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: failed to move load with loop-invariant address because the loop may invalidate its value
+<unknown>:0:0: failed to move load with loop-invariant address because the loop may invalidate its value
+<unknown>:0:0: failed to move load with loop-invariant address because the loop may invalidate its value
+<unknown>:0:0: Moving accesses to memory location out of the loop
+<unknown>:0:0: Moving accesses to memory location out of the loop
+<unknown>:0:0: Moving accesses to memory location out of the loop
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: failed to move load with loop-invariant address because the loop may invalidate its value
+<unknown>:0:0: failed to move load with loop-invariant address because the loop may invalidate its value
+<unknown>:0:0: failed to move load with loop-invariant address because the loop may invalidate its value
+<unknown>:0:0: Moving accesses to memory location out of the loop
+<unknown>:0:0: Moving accesses to memory location out of the loop
+<unknown>:0:0: Moving accesses to memory location out of the loop
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking zext
+<unknown>:0:0: sinking sext
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: hoisting shl
+<unknown>:0:0: hoisting icmp
+<unknown>:0:0: hoisting sext
+<unknown>:0:0: hoisting zext
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting and
+<unknown>:0:0: hoisting icmp
+<unknown>:0:0: hoisting sub
+<unknown>:0:0: hoisting icmp
+<unknown>:0:0: load eliminated by PRE
+<unknown>:0:0: load of type float eliminated
+<unknown>:0:0: load of type i64 eliminated
+<unknown>:0:0: load of type float eliminated
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: failed to move load with loop-invariant address because the loop may invalidate its value
+<unknown>:0:0: failed to move load with loop-invariant address because the loop may invalidate its value
+<unknown>:0:0: failed to move load with loop-invariant address because the loop may invalidate its value
+<unknown>:0:0: Moving accesses to memory location out of the loop
+<unknown>:0:0: Moving accesses to memory location out of the loop
+<unknown>:0:0: Moving accesses to memory location out of the loop
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: failed to move load with loop-invariant address because the loop may invalidate its value
+<unknown>:0:0: failed to move load with loop-invariant address because the loop may invalidate its value
+<unknown>:0:0: failed to move load with loop-invariant address because the loop may invalidate its value
+<unknown>:0:0: Moving accesses to memory location out of the loop
+<unknown>:0:0: Moving accesses to memory location out of the loop
+<unknown>:0:0: Moving accesses to memory location out of the loop
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking zext
+<unknown>:0:0: sinking sext
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: hoisting shl
+<unknown>:0:0: hoisting icmp
+<unknown>:0:0: hoisting sext
+<unknown>:0:0: hoisting zext
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting and
+<unknown>:0:0: hoisting icmp
+<unknown>:0:0: hoisting sub
+<unknown>:0:0: hoisting icmp
+<unknown>:0:0: load eliminated by PRE
+<unknown>:0:0: load of type float eliminated
+<unknown>:0:0: load of type i64 eliminated
+<unknown>:0:0: load of type float eliminated
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: loop not vectorized: value that could not be identified as reduction is used outside the loop
+<unknown>:0:0: loop not vectorized
+<unknown>:0:0: loop not vectorized: value that could not be identified as reduction is used outside the loop
+<unknown>:0:0: loop not vectorized: could not determine number of loop iterations
+<unknown>:0:0: loop not vectorized
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: loop not vectorized: value that could not be identified as reduction is used outside the loop
+<unknown>:0:0: loop not vectorized
+<unknown>:0:0: loop not vectorized: value that could not be identified as reduction is used outside the loop
+<unknown>:0:0: loop not vectorized: could not determine number of loop iterations
+<unknown>:0:0: loop not vectorized
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: loop not vectorized: value that could not be identified as reduction is used outside the loop
+<unknown>:0:0: loop not vectorized
+<unknown>:0:0: loop not vectorized: value that could not be identified as reduction is used outside the loop
+<unknown>:0:0: loop not vectorized: could not determine number of loop iterations
+<unknown>:0:0: loop not vectorized
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: 6 reloads 4 folded reloads generated in loop
+<unknown>:0:0: 1144 stack bytes in function
+<unknown>:0:0: 106 instructions in function
+<unknown>:0:0: 3 reloads 5 folded reloads generated in loop
+<unknown>:0:0: 1144 stack bytes in function
+<unknown>:0:0: 111 instructions in function
+<unknown>:0:0: 3 reloads 5 folded reloads generated in loop
+<unknown>:0:0: 1144 stack bytes in function
+<unknown>:0:0: 109 instructions in function
+<unknown>:0:0: _Z12get_local_idj inlined into _Z13get_global_idj with (cost=always): always inliner
+<unknown>:0:0: _Z12get_local_idj inlined into _Z13get_global_idj with (cost=always): always inliner
+<unknown>:0:0: _Z12get_local_idj inlined into _Z13get_global_idj with (cost=always): always inliner
+<unknown>:0:0: _Z13get_global_idj inlined into reduce_kernel with (cost=always): always inliner
+<unknown>:0:0: _Z13get_global_idj inlined into reduce_kernel with (cost=always): always inliner
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: _pocl_kernel_reduce_kernel inlined into _pocl_kernel_reduce_kernel_workgroup with (cost=always): always inliner
+<unknown>:0:0: _pocl_kernel_reduce_kernel inlined into _pocl_kernel_reduce_kernel_workgroup_fast with (cost=always): always inliner
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: hoisting shl
+<unknown>:0:0: hoisting mul
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting trunc
+<unknown>:0:0: hoisting icmp
+<unknown>:0:0: hoisting mul
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: hoisting shl
+<unknown>:0:0: hoisting mul
+<unknown>:0:0: completely unrolled loop with 8 iterations
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: hoisting shl
+<unknown>:0:0: hoisting mul
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting trunc
+<unknown>:0:0: hoisting icmp
+<unknown>:0:0: hoisting mul
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: hoisting shl
+<unknown>:0:0: hoisting mul
+<unknown>:0:0: completely unrolled loop with 8 iterations
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: hoisting shl
+<unknown>:0:0: hoisting mul
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting trunc
+<unknown>:0:0: hoisting icmp
+<unknown>:0:0: hoisting mul
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: hoisting shl
+<unknown>:0:0: hoisting mul
+<unknown>:0:0: completely unrolled loop with 8 iterations
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: the cost-model indicates that interleaving is not beneficial
+<unknown>:0:0: vectorized loop (vectorization width: 8, interleaved count: 1)
+<unknown>:0:0: the cost-model indicates that interleaving is not beneficial
+<unknown>:0:0: vectorized loop (vectorization width: 8, interleaved count: 1)
+<unknown>:0:0: the cost-model indicates that interleaving is not beneficial
+<unknown>:0:0: vectorized loop (vectorization width: 8, interleaved count: 1)
+<unknown>:0:0: the cost-model indicates that interleaving is not beneficial
+<unknown>:0:0: vectorized loop (vectorization width: 8, interleaved count: 1)
+<unknown>:0:0: the cost-model indicates that interleaving is not beneficial
+<unknown>:0:0: vectorized loop (vectorization width: 8, interleaved count: 1)
+<unknown>:0:0: the cost-model indicates that interleaving is not beneficial
+<unknown>:0:0: vectorized loop (vectorization width: 8, interleaved count: 1)
+<unknown>:0:0: the cost-model indicates that interleaving is not beneficial
+<unknown>:0:0: vectorized loop (vectorization width: 8, interleaved count: 1)
+<unknown>:0:0: the cost-model indicates that interleaving is not beneficial
+<unknown>:0:0: vectorized loop (vectorization width: 8, interleaved count: 1)
+<unknown>:0:0: Cannot SLP vectorize list: type <8 x float> is unsupported by vectorizer
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: type <8 x float> is unsupported by vectorizer
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: type <8 x float> is unsupported by vectorizer
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: type <8 x float> is unsupported by vectorizer
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: type <8 x float> is unsupported by vectorizer
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: type <8 x float> is unsupported by vectorizer
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: type <8 x float> is unsupported by vectorizer
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: type <8 x float> is unsupported by vectorizer
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: unrolled loop by a factor of 2 with a breakout at trip 0
+<unknown>:0:0: completely unrolled loop with 4 iterations
+<unknown>:0:0: unrolled loop by a factor of 2 with a breakout at trip 0
+<unknown>:0:0: completely unrolled loop with 4 iterations
+<unknown>:0:0: unrolled loop by a factor of 2 with a breakout at trip 0
+<unknown>:0:0: completely unrolled loop with 4 iterations
+<unknown>:0:0: unrolled loop by a factor of 2 with a breakout at trip 0
+<unknown>:0:0: completely unrolled loop with 4 iterations
+<unknown>:0:0: unrolled loop by a factor of 2 with a breakout at trip 0
+<unknown>:0:0: completely unrolled loop with 4 iterations
+<unknown>:0:0: unrolled loop by a factor of 2 with a breakout at trip 0
+<unknown>:0:0: completely unrolled loop with 4 iterations
+<unknown>:0:0: unrolled loop by a factor of 2 with a breakout at trip 0
+<unknown>:0:0: completely unrolled loop with 4 iterations
+<unknown>:0:0: unrolled loop by a factor of 2 with a breakout at trip 0
+<unknown>:0:0: completely unrolled loop with 4 iterations
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: the cost-model indicates that interleaving is not beneficial
+<unknown>:0:0: vectorized loop (vectorization width: 8, interleaved count: 1)
+<unknown>:0:0: the cost-model indicates that interleaving is not beneficial
+<unknown>:0:0: vectorized loop (vectorization width: 8, interleaved count: 1)
+<unknown>:0:0: the cost-model indicates that interleaving is not beneficial
+<unknown>:0:0: vectorized loop (vectorization width: 8, interleaved count: 1)
+<unknown>:0:0: the cost-model indicates that interleaving is not beneficial
+<unknown>:0:0: vectorized loop (vectorization width: 8, interleaved count: 1)
+<unknown>:0:0: the cost-model indicates that interleaving is not beneficial
+<unknown>:0:0: vectorized loop (vectorization width: 8, interleaved count: 1)
+<unknown>:0:0: the cost-model indicates that interleaving is not beneficial
+<unknown>:0:0: vectorized loop (vectorization width: 8, interleaved count: 1)
+<unknown>:0:0: the cost-model indicates that interleaving is not beneficial
+<unknown>:0:0: vectorized loop (vectorization width: 8, interleaved count: 1)
+<unknown>:0:0: the cost-model indicates that interleaving is not beneficial
+<unknown>:0:0: vectorized loop (vectorization width: 8, interleaved count: 1)
+<unknown>:0:0: Cannot SLP vectorize list: type <8 x float> is unsupported by vectorizer
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: type <8 x float> is unsupported by vectorizer
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: type <8 x float> is unsupported by vectorizer
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: type <8 x float> is unsupported by vectorizer
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: type <8 x float> is unsupported by vectorizer
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: type <8 x float> is unsupported by vectorizer
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: type <8 x float> is unsupported by vectorizer
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: type <8 x float> is unsupported by vectorizer
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: unrolled loop by a factor of 2 with a breakout at trip 0
+<unknown>:0:0: completely unrolled loop with 4 iterations
+<unknown>:0:0: unrolled loop by a factor of 2 with a breakout at trip 0
+<unknown>:0:0: completely unrolled loop with 4 iterations
+<unknown>:0:0: unrolled loop by a factor of 2 with a breakout at trip 0
+<unknown>:0:0: completely unrolled loop with 4 iterations
+<unknown>:0:0: unrolled loop by a factor of 2 with a breakout at trip 0
+<unknown>:0:0: completely unrolled loop with 4 iterations
+<unknown>:0:0: unrolled loop by a factor of 2 with a breakout at trip 0
+<unknown>:0:0: completely unrolled loop with 4 iterations
+<unknown>:0:0: unrolled loop by a factor of 2 with a breakout at trip 0
+<unknown>:0:0: completely unrolled loop with 4 iterations
+<unknown>:0:0: unrolled loop by a factor of 2 with a breakout at trip 0
+<unknown>:0:0: completely unrolled loop with 4 iterations
+<unknown>:0:0: unrolled loop by a factor of 2 with a breakout at trip 0
+<unknown>:0:0: completely unrolled loop with 4 iterations
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: the cost-model indicates that interleaving is not beneficial
+<unknown>:0:0: vectorized loop (vectorization width: 8, interleaved count: 1)
+<unknown>:0:0: the cost-model indicates that interleaving is not beneficial
+<unknown>:0:0: vectorized loop (vectorization width: 8, interleaved count: 1)
+<unknown>:0:0: the cost-model indicates that interleaving is not beneficial
+<unknown>:0:0: vectorized loop (vectorization width: 8, interleaved count: 1)
+<unknown>:0:0: the cost-model indicates that interleaving is not beneficial
+<unknown>:0:0: vectorized loop (vectorization width: 8, interleaved count: 1)
+<unknown>:0:0: the cost-model indicates that interleaving is not beneficial
+<unknown>:0:0: vectorized loop (vectorization width: 8, interleaved count: 1)
+<unknown>:0:0: the cost-model indicates that interleaving is not beneficial
+<unknown>:0:0: vectorized loop (vectorization width: 8, interleaved count: 1)
+<unknown>:0:0: the cost-model indicates that interleaving is not beneficial
+<unknown>:0:0: vectorized loop (vectorization width: 8, interleaved count: 1)
+<unknown>:0:0: the cost-model indicates that interleaving is not beneficial
+<unknown>:0:0: vectorized loop (vectorization width: 8, interleaved count: 1)
+<unknown>:0:0: Cannot SLP vectorize list: type <8 x float> is unsupported by vectorizer
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: type <8 x float> is unsupported by vectorizer
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: type <8 x float> is unsupported by vectorizer
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: type <8 x float> is unsupported by vectorizer
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: type <8 x float> is unsupported by vectorizer
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: type <8 x float> is unsupported by vectorizer
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: type <8 x float> is unsupported by vectorizer
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: type <8 x float> is unsupported by vectorizer
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: unrolled loop by a factor of 2 with a breakout at trip 0
+<unknown>:0:0: completely unrolled loop with 4 iterations
+<unknown>:0:0: unrolled loop by a factor of 2 with a breakout at trip 0
+<unknown>:0:0: completely unrolled loop with 4 iterations
+<unknown>:0:0: unrolled loop by a factor of 2 with a breakout at trip 0
+<unknown>:0:0: completely unrolled loop with 4 iterations
+<unknown>:0:0: unrolled loop by a factor of 2 with a breakout at trip 0
+<unknown>:0:0: completely unrolled loop with 4 iterations
+<unknown>:0:0: unrolled loop by a factor of 2 with a breakout at trip 0
+<unknown>:0:0: completely unrolled loop with 4 iterations
+<unknown>:0:0: unrolled loop by a factor of 2 with a breakout at trip 0
+<unknown>:0:0: completely unrolled loop with 4 iterations
+<unknown>:0:0: unrolled loop by a factor of 2 with a breakout at trip 0
+<unknown>:0:0: completely unrolled loop with 4 iterations
+<unknown>:0:0: unrolled loop by a factor of 2 with a breakout at trip 0
+<unknown>:0:0: completely unrolled loop with 4 iterations
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: 32 stack bytes in function
+<unknown>:0:0: 1010 instructions in function
+<unknown>:0:0: 32 stack bytes in function
+<unknown>:0:0: 1014 instructions in function
+<unknown>:0:0: 32 stack bytes in function
+<unknown>:0:0: 1012 instructions in function
+<unknown>:0:0: _Z12get_local_idj inlined into _Z13get_global_idj with (cost=always): always inliner
+<unknown>:0:0: _Z12get_local_idj inlined into _Z13get_global_idj with (cost=always): always inliner
+<unknown>:0:0: _Z12get_local_idj inlined into _Z13get_global_idj with (cost=always): always inliner
+<unknown>:0:0: _Z13get_global_idj inlined into covar_kernel with (cost=always): always inliner
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: loop not vectorized: unsafe dependent memory operations in loop. Use #pragma loop distribute(enable) to allow loop distribution to attempt to isolate the offending operations into a separate loop
+<unknown>:0:0: loop not vectorized
+<unknown>:0:0: loop not vectorized: value that could not be identified as reduction is used outside the loop
+<unknown>:0:0: loop not vectorized
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: unrolled loop by a factor of 4 with run-time trip count
+<unknown>:0:0: unrolled loop by a factor of 4 with run-time trip count
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: hoisting and
+<unknown>:0:0: hoisting icmp
+<unknown>:0:0: hoisting sub
+<unknown>:0:0: hoisting icmp
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: _pocl_kernel_covar_kernel inlined into _pocl_kernel_covar_kernel_workgroup with (cost=always): always inliner
+<unknown>:0:0: _pocl_kernel_covar_kernel inlined into _pocl_kernel_covar_kernel_workgroup_fast with (cost=always): always inliner
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: failed to move load with loop-invariant address because the loop may invalidate its value
+<unknown>:0:0: failed to move load with loop-invariant address because the loop may invalidate its value
+<unknown>:0:0: Moving accesses to memory location out of the loop
+<unknown>:0:0: Moving accesses to memory location out of the loop
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: failed to move load with loop-invariant address because the loop may invalidate its value
+<unknown>:0:0: Moving accesses to memory location out of the loop
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: failed to move load with loop-invariant address because the loop may invalidate its value
+<unknown>:0:0: failed to move load with loop-invariant address because the loop may invalidate its value
+<unknown>:0:0: failed to move load with loop-invariant address because the loop may invalidate its value
+<unknown>:0:0: Moving accesses to memory location out of the loop
+<unknown>:0:0: Moving accesses to memory location out of the loop
+<unknown>:0:0: Moving accesses to memory location out of the loop
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: failed to move load with loop-invariant address because the loop may invalidate its value
+<unknown>:0:0: failed to move load with loop-invariant address because the loop may invalidate its value
+<unknown>:0:0: failed to move load with loop-invariant address because the loop may invalidate its value
+<unknown>:0:0: Moving accesses to memory location out of the loop
+<unknown>:0:0: Moving accesses to memory location out of the loop
+<unknown>:0:0: Moving accesses to memory location out of the loop
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: failed to move load with loop-invariant address because the loop may invalidate its value
+<unknown>:0:0: hoisting getelementptr
+<unknown>:0:0: hoisting getelementptr
+<unknown>:0:0: hoisting getelementptr
+<unknown>:0:0: hoisting getelementptr
+<unknown>:0:0: hoisting getelementptr
+<unknown>:0:0: failed to move load with loop-invariant address because the loop may invalidate its value
+<unknown>:0:0: failed to move load with loop-invariant address because the loop may invalidate its value
+<unknown>:0:0: failed to move load with loop-invariant address because the loop may invalidate its value
+<unknown>:0:0: hoisting getelementptr
+<unknown>:0:0: hoisting getelementptr
+<unknown>:0:0: hoisting bitcast
+<unknown>:0:0: failed to move load with loop-invariant address because the loop may invalidate its value
+<unknown>:0:0: hoisting bitcast
+<unknown>:0:0: failed to move load with loop-invariant address because the loop may invalidate its value
+<unknown>:0:0: failed to move load with loop-invariant address because the loop may invalidate its value
+<unknown>:0:0: hoisting getelementptr
+<unknown>:0:0: hoisting bitcast
+<unknown>:0:0: hoisting getelementptr
+<unknown>:0:0: hoisting bitcast
+<unknown>:0:0: hoisting getelementptr
+<unknown>:0:0: hoisting getelementptr
+<unknown>:0:0: failed to move load with loop-invariant address because the loop may invalidate its value
+<unknown>:0:0: failed to move load with loop-invariant address because the loop may invalidate its value
+<unknown>:0:0: failed to move load with loop-invariant address because the loop may invalidate its value
+<unknown>:0:0: failed to move load with loop-invariant address because the loop may invalidate its value
+<unknown>:0:0: Moving accesses to memory location out of the loop
+<unknown>:0:0: Moving accesses to memory location out of the loop
+<unknown>:0:0: failed to hoist load with loop-invariant address because load is conditionally executed
+<unknown>:0:0: failed to hoist load with loop-invariant address because load is conditionally executed
+<unknown>:0:0: failed to hoist load with loop-invariant address because load is conditionally executed
+<unknown>:0:0: failed to hoist load with loop-invariant address because load is conditionally executed
+<unknown>:0:0: failed to hoist load with loop-invariant address because load is conditionally executed
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking zext
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: hoisting shl
+<unknown>:0:0: hoisting icmp
+<unknown>:0:0: hoisting sext
+<unknown>:0:0: hoisting zext
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting and
+<unknown>:0:0: hoisting icmp
+<unknown>:0:0: hoisting sub
+<unknown>:0:0: hoisting icmp
+<unknown>:0:0: load of type i64 eliminated
+<unknown>:0:0: load of type i64 eliminated
+<unknown>:0:0: load eliminated by PRE
+<unknown>:0:0: load of type float eliminated
+<unknown>:0:0: load of type i32 eliminated
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: failed to move load with loop-invariant address because the loop may invalidate its value
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: failed to move load with loop-invariant address because the loop may invalidate its value
+<unknown>:0:0: failed to move load with loop-invariant address because the loop may invalidate its value
+<unknown>:0:0: Moving accesses to memory location out of the loop
+<unknown>:0:0: Moving accesses to memory location out of the loop
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: failed to move load with loop-invariant address because the loop may invalidate its value
+<unknown>:0:0: Moving accesses to memory location out of the loop
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: failed to move load with loop-invariant address because the loop may invalidate its value
+<unknown>:0:0: failed to move load with loop-invariant address because the loop may invalidate its value
+<unknown>:0:0: failed to move load with loop-invariant address because the loop may invalidate its value
+<unknown>:0:0: Moving accesses to memory location out of the loop
+<unknown>:0:0: Moving accesses to memory location out of the loop
+<unknown>:0:0: Moving accesses to memory location out of the loop
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: failed to move load with loop-invariant address because the loop may invalidate its value
+<unknown>:0:0: failed to move load with loop-invariant address because the loop may invalidate its value
+<unknown>:0:0: failed to move load with loop-invariant address because the loop may invalidate its value
+<unknown>:0:0: Moving accesses to memory location out of the loop
+<unknown>:0:0: Moving accesses to memory location out of the loop
+<unknown>:0:0: Moving accesses to memory location out of the loop
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: failed to move load with loop-invariant address because the loop may invalidate its value
+<unknown>:0:0: hoisting getelementptr
+<unknown>:0:0: hoisting getelementptr
+<unknown>:0:0: hoisting getelementptr
+<unknown>:0:0: hoisting getelementptr
+<unknown>:0:0: hoisting getelementptr
+<unknown>:0:0: failed to move load with loop-invariant address because the loop may invalidate its value
+<unknown>:0:0: failed to move load with loop-invariant address because the loop may invalidate its value
+<unknown>:0:0: failed to move load with loop-invariant address because the loop may invalidate its value
+<unknown>:0:0: hoisting getelementptr
+<unknown>:0:0: hoisting getelementptr
+<unknown>:0:0: hoisting bitcast
+<unknown>:0:0: failed to move load with loop-invariant address because the loop may invalidate its value
+<unknown>:0:0: hoisting bitcast
+<unknown>:0:0: failed to move load with loop-invariant address because the loop may invalidate its value
+<unknown>:0:0: failed to move load with loop-invariant address because the loop may invalidate its value
+<unknown>:0:0: hoisting getelementptr
+<unknown>:0:0: hoisting bitcast
+<unknown>:0:0: hoisting getelementptr
+<unknown>:0:0: hoisting bitcast
+<unknown>:0:0: hoisting getelementptr
+<unknown>:0:0: hoisting getelementptr
+<unknown>:0:0: failed to move load with loop-invariant address because the loop may invalidate its value
+<unknown>:0:0: failed to move load with loop-invariant address because the loop may invalidate its value
+<unknown>:0:0: failed to move load with loop-invariant address because the loop may invalidate its value
+<unknown>:0:0: failed to move load with loop-invariant address because the loop may invalidate its value
+<unknown>:0:0: Moving accesses to memory location out of the loop
+<unknown>:0:0: Moving accesses to memory location out of the loop
+<unknown>:0:0: failed to hoist load with loop-invariant address because load is conditionally executed
+<unknown>:0:0: failed to hoist load with loop-invariant address because load is conditionally executed
+<unknown>:0:0: failed to hoist load with loop-invariant address because load is conditionally executed
+<unknown>:0:0: failed to hoist load with loop-invariant address because load is conditionally executed
+<unknown>:0:0: failed to hoist load with loop-invariant address because load is conditionally executed
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking zext
+<unknown>:0:0: sinking sext
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: hoisting shl
+<unknown>:0:0: hoisting icmp
+<unknown>:0:0: hoisting sext
+<unknown>:0:0: hoisting zext
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting and
+<unknown>:0:0: hoisting icmp
+<unknown>:0:0: hoisting sub
+<unknown>:0:0: hoisting icmp
+<unknown>:0:0: load of type i64 eliminated
+<unknown>:0:0: load of type i64 eliminated
+<unknown>:0:0: load eliminated by PRE
+<unknown>:0:0: load of type float eliminated
+<unknown>:0:0: load of type i32 eliminated
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: failed to move load with loop-invariant address because the loop may invalidate its value
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: failed to move load with loop-invariant address because the loop may invalidate its value
+<unknown>:0:0: failed to move load with loop-invariant address because the loop may invalidate its value
+<unknown>:0:0: Moving accesses to memory location out of the loop
+<unknown>:0:0: Moving accesses to memory location out of the loop
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: failed to move load with loop-invariant address because the loop may invalidate its value
+<unknown>:0:0: Moving accesses to memory location out of the loop
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: failed to move load with loop-invariant address because the loop may invalidate its value
+<unknown>:0:0: failed to move load with loop-invariant address because the loop may invalidate its value
+<unknown>:0:0: failed to move load with loop-invariant address because the loop may invalidate its value
+<unknown>:0:0: Moving accesses to memory location out of the loop
+<unknown>:0:0: Moving accesses to memory location out of the loop
+<unknown>:0:0: Moving accesses to memory location out of the loop
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: failed to move load with loop-invariant address because the loop may invalidate its value
+<unknown>:0:0: failed to move load with loop-invariant address because the loop may invalidate its value
+<unknown>:0:0: failed to move load with loop-invariant address because the loop may invalidate its value
+<unknown>:0:0: Moving accesses to memory location out of the loop
+<unknown>:0:0: Moving accesses to memory location out of the loop
+<unknown>:0:0: Moving accesses to memory location out of the loop
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: failed to move load with loop-invariant address because the loop may invalidate its value
+<unknown>:0:0: hoisting getelementptr
+<unknown>:0:0: hoisting getelementptr
+<unknown>:0:0: hoisting getelementptr
+<unknown>:0:0: hoisting getelementptr
+<unknown>:0:0: hoisting getelementptr
+<unknown>:0:0: failed to move load with loop-invariant address because the loop may invalidate its value
+<unknown>:0:0: failed to move load with loop-invariant address because the loop may invalidate its value
+<unknown>:0:0: failed to move load with loop-invariant address because the loop may invalidate its value
+<unknown>:0:0: hoisting getelementptr
+<unknown>:0:0: hoisting getelementptr
+<unknown>:0:0: hoisting bitcast
+<unknown>:0:0: failed to move load with loop-invariant address because the loop may invalidate its value
+<unknown>:0:0: hoisting bitcast
+<unknown>:0:0: failed to move load with loop-invariant address because the loop may invalidate its value
+<unknown>:0:0: failed to move load with loop-invariant address because the loop may invalidate its value
+<unknown>:0:0: hoisting getelementptr
+<unknown>:0:0: hoisting bitcast
+<unknown>:0:0: hoisting getelementptr
+<unknown>:0:0: hoisting bitcast
+<unknown>:0:0: hoisting getelementptr
+<unknown>:0:0: hoisting getelementptr
+<unknown>:0:0: failed to move load with loop-invariant address because the loop may invalidate its value
+<unknown>:0:0: failed to move load with loop-invariant address because the loop may invalidate its value
+<unknown>:0:0: failed to move load with loop-invariant address because the loop may invalidate its value
+<unknown>:0:0: failed to move load with loop-invariant address because the loop may invalidate its value
+<unknown>:0:0: Moving accesses to memory location out of the loop
+<unknown>:0:0: Moving accesses to memory location out of the loop
+<unknown>:0:0: failed to hoist load with loop-invariant address because load is conditionally executed
+<unknown>:0:0: failed to hoist load with loop-invariant address because load is conditionally executed
+<unknown>:0:0: failed to hoist load with loop-invariant address because load is conditionally executed
+<unknown>:0:0: failed to hoist load with loop-invariant address because load is conditionally executed
+<unknown>:0:0: failed to hoist load with loop-invariant address because load is conditionally executed
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking zext
+<unknown>:0:0: sinking sext
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: hoisting shl
+<unknown>:0:0: hoisting icmp
+<unknown>:0:0: hoisting sext
+<unknown>:0:0: hoisting zext
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting and
+<unknown>:0:0: hoisting icmp
+<unknown>:0:0: hoisting sub
+<unknown>:0:0: hoisting icmp
+<unknown>:0:0: load of type i64 eliminated
+<unknown>:0:0: load of type i64 eliminated
+<unknown>:0:0: load eliminated by PRE
+<unknown>:0:0: load of type float eliminated
+<unknown>:0:0: load of type i32 eliminated
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: failed to move load with loop-invariant address because the loop may invalidate its value
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: loop not vectorized: value that could not be identified as reduction is used outside the loop
+<unknown>:0:0: loop not vectorized
+<unknown>:0:0: loop not vectorized: value that could not be identified as reduction is used outside the loop
+<unknown>:0:0: loop not vectorized: could not determine number of loop iterations
+<unknown>:0:0: loop not vectorized
+<unknown>:0:0: loop not vectorized: unsafe dependent memory operations in loop. Use #pragma loop distribute(enable) to allow loop distribution to attempt to isolate the offending operations into a separate loop
+<unknown>:0:0: loop not vectorized
+<unknown>:0:0: loop not vectorized: unsafe dependent memory operations in loop. Use #pragma loop distribute(enable) to allow loop distribution to attempt to isolate the offending operations into a separate loop
+<unknown>:0:0: loop not vectorized
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: failed to move load with loop-invariant address because the loop may invalidate its value
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: loop not vectorized: value that could not be identified as reduction is used outside the loop
+<unknown>:0:0: loop not vectorized
+<unknown>:0:0: loop not vectorized: value that could not be identified as reduction is used outside the loop
+<unknown>:0:0: loop not vectorized: could not determine number of loop iterations
+<unknown>:0:0: loop not vectorized
+<unknown>:0:0: loop not vectorized: unsafe dependent memory operations in loop. Use #pragma loop distribute(enable) to allow loop distribution to attempt to isolate the offending operations into a separate loop
+<unknown>:0:0: loop not vectorized
+<unknown>:0:0: loop not vectorized: unsafe dependent memory operations in loop. Use #pragma loop distribute(enable) to allow loop distribution to attempt to isolate the offending operations into a separate loop
+<unknown>:0:0: loop not vectorized
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: failed to move load with loop-invariant address because the loop may invalidate its value
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: loop not vectorized: value that could not be identified as reduction is used outside the loop
+<unknown>:0:0: loop not vectorized
+<unknown>:0:0: loop not vectorized: value that could not be identified as reduction is used outside the loop
+<unknown>:0:0: loop not vectorized: could not determine number of loop iterations
+<unknown>:0:0: loop not vectorized
+<unknown>:0:0: loop not vectorized: unsafe dependent memory operations in loop. Use #pragma loop distribute(enable) to allow loop distribution to attempt to isolate the offending operations into a separate loop
+<unknown>:0:0: loop not vectorized
+<unknown>:0:0: loop not vectorized: unsafe dependent memory operations in loop. Use #pragma loop distribute(enable) to allow loop distribution to attempt to isolate the offending operations into a separate loop
+<unknown>:0:0: loop not vectorized
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: failed to move load with loop-invariant address because the loop may invalidate its value
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking trunc
