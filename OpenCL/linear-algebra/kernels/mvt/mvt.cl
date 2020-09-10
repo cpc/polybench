@@ -16,7 +16,14 @@
 
 typedef float DATA_TYPE;
 
-
+// Reduction variable in the loop cannot be identified as any of the supported
+// reduction types
+// (https://github.com/llvm/llvm-project/blob/517202c720ea527aab689590c81703a70793cb97/llvm/include/llvm/Analysis/IVDescriptors.h#L52)
+// For instance float multiply or add reduction is not recognize  because of the
+// @llvm.fmuladd intrinsic in the loop. This if clause causes the fail:
+// https://github.com/llvm/llvm-project/blob/05d02e5a4e54a04f050b52ee30d1860073bd8b34/llvm/lib/Analysis/IVDescriptors.cpp#L291
+//
+// Could it be possible to compile kernel without @llvm.fmuladd intrinsic?
 
 __kernel void mvt_kernel1(__global DATA_TYPE *a, __global DATA_TYPE *x1, __global DATA_TYPE *y1, int n)
 {
