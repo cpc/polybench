@@ -94,7 +94,7 @@ void compareResults(int m, int n, DATA_TYPE POLYBENCH_2D(symmat,M,M,m,m), DATA_T
 void read_cl_file()
 {
     // Load the kernel source code into the array source_str
-    fp = fopen("covariance.cl", "r");
+    fp = fopen("covariance_noif.cl", "r");
     if (!fp) {
         fprintf(stderr, "Failed to load kernel.\n");
         exit(1);

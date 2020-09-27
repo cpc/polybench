@@ -109,7 +109,7 @@ void init(int n, DATA_TYPE *alpha, DATA_TYPE *beta, DATA_TYPE POLYBENCH_2D(A,N,N
 void read_cl_file()
 {
     // Load the kernel source code into the array source_str
-    fp = fopen("gesummv.cl", "r");
+    fp = fopen("gesummv_noif.cl", "r");
     if (!fp) {
         fprintf(stderr, "Failed to load kernel.\n");
         exit(1);

@@ -91,7 +91,7 @@ void compareResults(int ni, int nj, DATA_TYPE POLYBENCH_2D(A,NI,NJ,ni,nj), DATA_
 void read_cl_file()
 {
     // Load the kernel source code into the array source_str
-    fp = fopen("gramschmidt.cl", "r");
+    fp = fopen("gramschmidt_noif.cl", "r");
     if (!fp) {
         fprintf(stderr, "Failed to load kernel.\n");
         exit(1);

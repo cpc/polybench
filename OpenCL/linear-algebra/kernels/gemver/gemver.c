@@ -92,7 +92,7 @@ void compareResults(int n, DATA_TYPE POLYBENCH_1D(w1, N, n), DATA_TYPE POLYBENCH
 void read_cl_file()
 {
     // Load the kernel source code into the array source_str
-    fp = fopen("gemver.cl", "r");
+    fp = fopen("gemver_noif.cl", "r");
     if (!fp) {
         fprintf(stderr, "Failed to load kernel.\n");
         exit(1);

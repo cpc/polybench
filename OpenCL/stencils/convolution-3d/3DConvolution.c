@@ -63,7 +63,7 @@ size_t source_size;
 void read_cl_file()
 {
     // Load the kernel source code into the array source_str
-    fp = fopen("3DConvolution.cl", "r");
+    fp = fopen("3DConvolution_noif.cl", "r");
     if (!fp) {
         fprintf(stderr, "Failed to load kernel.\n");
         exit(1);

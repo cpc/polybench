@@ -91,7 +91,7 @@ void compareResults(int ni, DATA_TYPE POLYBENCH_2D(C, NI, NI, ni, ni), DATA_TYPE
 void read_cl_file()
 {
     // Load the kernel source code into the array source_str
-    fp = fopen("syrk.cl", "r");
+    fp = fopen("syrk_noif.cl", "r");
     if (!fp) {
         fprintf(stderr, "Failed to load kernel.\n");
         exit(1);

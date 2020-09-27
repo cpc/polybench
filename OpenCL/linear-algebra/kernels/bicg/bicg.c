@@ -101,7 +101,7 @@ void compareResults(int nx, int ny, DATA_TYPE POLYBENCH_1D(s,NY,ny), DATA_TYPE P
 void read_cl_file()
 {
     // Load the kernel source code into the array source_str
-    fp = fopen("bicg.cl", "r");
+    fp = fopen("bicg_noif.cl", "r");
     if (!fp) {
         fprintf(stderr, "Failed to load kernel.\n");
         exit(1);

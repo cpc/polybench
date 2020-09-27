@@ -92,7 +92,7 @@ void compareResults(int n, DATA_TYPE POLYBENCH_1D(x1, N, n), DATA_TYPE POLYBENCH
 void read_cl_file()
 {
     // Load the kernel source code into the array source_str
-    fp = fopen("mvt.cl", "r");
+    fp = fopen("mvt_noif.cl", "r");
     if (!fp) {
         fprintf(stdout, "Failed to load kernel.\n");
         exit(1);

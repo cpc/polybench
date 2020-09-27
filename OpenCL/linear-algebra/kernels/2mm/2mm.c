@@ -92,7 +92,7 @@ void compareResults(int ni, int nl, DATA_TYPE POLYBENCH_2D(D, NI, NL, ni, nl), D
 void read_cl_file()
 {
     // Load the kernel source code into the array source_str
-    fp = fopen("2mm.cl", "r");
+    fp = fopen("2mm_noif.cl", "r");
     if (!fp) {
         fprintf(stderr, "Failed to load kernel.\n");
         exit(1);

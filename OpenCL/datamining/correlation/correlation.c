@@ -96,7 +96,7 @@ void compareResults(int m, int n, DATA_TYPE POLYBENCH_2D(symmat, M, N, m, n), DA
 void read_cl_file()
 {
     // Load the kernel source code into the array source_str
-    fp = fopen("correlation.cl", "r");
+    fp = fopen("correlation_noif.cl", "r");
     if (!fp) {
         fprintf(stderr, "Failed to load kernel.\n");
         exit(1);

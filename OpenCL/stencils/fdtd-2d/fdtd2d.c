@@ -90,7 +90,7 @@ void compareResults(int nx, int ny, DATA_TYPE POLYBENCH_2D(hz1,NX,NY,nx,ny), DAT
 void read_cl_file()
 {
     // Load the kernel source code into the array source_str
-    fp = fopen("fdtd2d.cl", "r");
+    fp = fopen("fdtd2d_noif.cl", "r");
     if (!fp) {
         fprintf(stderr, "Failed to load kernel.\n");
         exit(1);

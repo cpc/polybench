@@ -142,7 +142,7 @@ void compareResults(int nr, int nq, int np, DATA_TYPE POLYBENCH_3D(sum,NR,NQ,NP,
 void read_cl_file()
 {
     // Load the kernel source code into the array source_str
-    fp = fopen("doitgen.cl", "r");
+    fp = fopen("doitgen_noif.cl", "r");
     if (!fp) {
         fprintf(stderr, "Failed to load kernel.\n");
         exit(1);

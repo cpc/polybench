@@ -97,7 +97,7 @@ void compareResults(int n, DATA_TYPE POLYBENCH_2D(a,N,N,n,n), DATA_TYPE POLYBENC
 void read_cl_file()
 {
 	// Load the kernel source code into the array source_str
-	fp = fopen("jacobi2D.cl", "r");
+	fp = fopen("jacobi2D_noif.cl", "r");
 	if (!fp) {
 		fprintf(stderr, "Failed to load kernel.\n");
 		exit(1);

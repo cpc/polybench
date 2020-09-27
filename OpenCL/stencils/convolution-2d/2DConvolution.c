@@ -87,7 +87,7 @@ void compareResults(int ni, int nj, DATA_TYPE POLYBENCH_2D(B, NI, NJ, ni, nj), D
 void read_cl_file()
 {
     // Load the kernel source code into the array source_str
-    fp = fopen("2DConvolution.cl", "r");
+    fp = fopen("2DConvolution_noif.cl", "r");
     if (!fp) {
         fprintf(stdout, "Failed to load kernel.\n");
         exit(1);

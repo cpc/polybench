@@ -1,4 +1,4 @@
-CLANG_COMMAND="clang -emit-llvm -S -Xclang -finclude-default-header -c "
+CLANG_COMMAND="clang -emit-llvm -S -fno-unroll-loops -Xclang -finclude-default-header -c "
 OPT_CFG_COMMAND="opt -dot-cfg "
 DOT_COMMAND="dot -Tpdf "
 CWD=$(pwd)

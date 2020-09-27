@@ -1,5 +1,5 @@
 /**
- * atax.cl: This file is part of the PolyBench/GPU 1.0 test suite.
+ * jacobi1D.cl: This file is part of the PolyBench/GPU 1.0 test suite.
  *
  *
  * Contact: Scott Grauer-Gray <sgrauerg@gmail.com>
@@ -16,31 +16,16 @@
 
 typedef float DATA_TYPE;
 
-__kernel void atax_kernel1(__global DATA_TYPE *A, __global DATA_TYPE *x, __global DATA_TYPE *tmp, int nx, int ny) {
 
+__kernel void runJacobi1D_kernel1(__global DATA_TYPE* A, __global DATA_TYPE* B, int n)
+{
 	int i = get_global_id(0);
-
-	if (i < nx)
-	{
-		int j;
-		for(j=0; j < ny; j++)
-		{
-			tmp[i] += A[i * ny + j] * x[j];
-		}
-	}
+    B[i] = 0.33333f * (A[i-1] + A[i] + A[i + 1]);
 }
 
-__kernel void atax_kernel2(__global DATA_TYPE *A, __global DATA_TYPE *y, __global DATA_TYPE *tmp, int nx, int ny) {
-
+__kernel void runJacobi1D_kernel2(__global DATA_TYPE* A, __global DATA_TYPE* B, int n)
+{
 	int j = get_global_id(0);
 
-	if (j < ny)
-	{
-		int i;
-		for(i=0; i < nx; i++)
-		{
-			y[j] += A[i * ny + j] * tmp[i];
-		}
-	}
+    A[j] = B[j];
 }
-

@@ -90,7 +90,7 @@ void compareResults(int n, DATA_TYPE POLYBENCH_1D(a,N,n), DATA_TYPE POLYBENCH_1D
 void read_cl_file()
 {
     // Load the kernel source code into the array source_str
-    fp = fopen("jacobi1D.cl", "r");
+    fp = fopen("jacobi1D_noif.cl", "r");
     if (!fp) {
         fprintf(stderr, "Failed to load kernel.\n");
         exit(1);
