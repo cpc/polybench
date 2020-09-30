@@ -1,0 +1,522 @@
+<unknown>:0:0: _Z12get_local_idj inlined into _Z13get_global_idj with (cost=always): always inliner
+<unknown>:0:0: _Z12get_local_idj inlined into _Z13get_global_idj with (cost=always): always inliner
+<unknown>:0:0: _Z12get_local_idj inlined into _Z13get_global_idj with (cost=always): always inliner
+<unknown>:0:0: _Z13get_global_idj inlined into Convolution3D_kernel with (cost=always): always inliner
+<unknown>:0:0: _Z13get_global_idj inlined into Convolution3D_kernel with (cost=always): always inliner
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: _pocl_kernel_Convolution3D_kernel inlined into _pocl_kernel_Convolution3D_kernel_workgroup with (cost=always): always inliner
+<unknown>:0:0: _pocl_kernel_Convolution3D_kernel inlined into _pocl_kernel_Convolution3D_kernel_workgroup_fast with (cost=always): always inliner
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: hoisting mul
+<unknown>:0:0: hoisting mul
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting trunc
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting mul
+<unknown>:0:0: hoisting mul
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting mul
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting mul
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting mul
+<unknown>:0:0: hoisting mul
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting mul
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: hoisting mul
+<unknown>:0:0: hoisting mul
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting mul
+<unknown>:0:0: hoisting mul
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting mul
+<unknown>:0:0: hoisting mul
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: hoisting mul
+<unknown>:0:0: hoisting mul
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting trunc
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting mul
+<unknown>:0:0: hoisting mul
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting mul
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting mul
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting mul
+<unknown>:0:0: hoisting mul
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting mul
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: hoisting mul
+<unknown>:0:0: hoisting mul
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting mul
+<unknown>:0:0: hoisting mul
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting mul
+<unknown>:0:0: hoisting mul
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: hoisting mul
+<unknown>:0:0: hoisting mul
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting trunc
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting mul
+<unknown>:0:0: hoisting mul
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting mul
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting mul
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting mul
+<unknown>:0:0: hoisting mul
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting mul
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: hoisting mul
+<unknown>:0:0: hoisting mul
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting mul
+<unknown>:0:0: hoisting mul
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting mul
+<unknown>:0:0: hoisting mul
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: the cost-model indicates that interleaving is not beneficial
+<unknown>:0:0: vectorized loop (vectorization width: 8, interleaved count: 1)
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Vectorized horizontal reduction with cost -9 and with tree size 10
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: SLP vectorized with cost -1 and with tree size 5
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: completely unrolled loop with 4 iterations
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: hoisting trunc
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting or
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting trunc
+<unknown>:0:0: hoisting or
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting or
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting trunc
+<unknown>:0:0: hoisting or
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting or
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting trunc
+<unknown>:0:0: hoisting or
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting or
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting add
+<unknown>:0:0: the cost-model indicates that interleaving is not beneficial
+<unknown>:0:0: vectorized loop (vectorization width: 8, interleaved count: 1)
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Vectorized horizontal reduction with cost -10 and with tree size 10
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: completely unrolled loop with 4 iterations
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: hoisting trunc
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting or
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting trunc
+<unknown>:0:0: hoisting or
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting or
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting trunc
+<unknown>:0:0: hoisting or
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting or
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting trunc
+<unknown>:0:0: hoisting or
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting or
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting add
+<unknown>:0:0: the cost-model indicates that interleaving is not beneficial
+<unknown>:0:0: vectorized loop (vectorization width: 8, interleaved count: 1)
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Vectorized horizontal reduction with cost -10 and with tree size 10
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: completely unrolled loop with 4 iterations
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking bitcast
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: hoisting trunc
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting or
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting trunc
+<unknown>:0:0: hoisting or
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting or
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting trunc
+<unknown>:0:0: hoisting or
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting or
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting trunc
+<unknown>:0:0: hoisting or
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting or
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting add

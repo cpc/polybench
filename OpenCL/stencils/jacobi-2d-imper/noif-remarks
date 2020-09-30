@@ -1,0 +1,1188 @@
+<unknown>:0:0: _Z12get_local_idj inlined into _Z13get_global_idj with (cost=always): always inliner
+<unknown>:0:0: _Z12get_local_idj inlined into _Z13get_global_idj with (cost=always): always inliner
+<unknown>:0:0: _Z12get_local_idj inlined into _Z13get_global_idj with (cost=always): always inliner
+<unknown>:0:0: _Z13get_global_idj inlined into runJacobi2D_kernel1 with (cost=always): always inliner
+<unknown>:0:0: _Z13get_global_idj inlined into runJacobi2D_kernel1 with (cost=always): always inliner
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: _pocl_kernel_runJacobi2D_kernel1 inlined into _pocl_kernel_runJacobi2D_kernel1_workgroup with (cost=always): always inliner
+<unknown>:0:0: _pocl_kernel_runJacobi2D_kernel1 inlined into _pocl_kernel_runJacobi2D_kernel1_workgroup_fast with (cost=always): always inliner
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: hoisting mul
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting trunc
+<unknown>:0:0: hoisting mul
+<unknown>:0:0: hoisting mul
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting mul
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting mul
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: hoisting mul
+<unknown>:0:0: hoisting mul
+<unknown>:0:0: completely unrolled loop with 8 iterations
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: hoisting mul
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting trunc
+<unknown>:0:0: hoisting mul
+<unknown>:0:0: hoisting mul
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting mul
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting mul
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: hoisting mul
+<unknown>:0:0: hoisting mul
+<unknown>:0:0: completely unrolled loop with 8 iterations
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: hoisting mul
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting trunc
+<unknown>:0:0: hoisting mul
+<unknown>:0:0: hoisting mul
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting mul
+<unknown>:0:0: hoisting add
+<unknown>:0:0: hoisting mul
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: hoisting mul
+<unknown>:0:0: hoisting mul
+<unknown>:0:0: completely unrolled loop with 8 iterations
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: the cost-model indicates that interleaving is not beneficial
+<unknown>:0:0: vectorized loop (vectorization width: 8, interleaved count: 1)
+<unknown>:0:0: the cost-model indicates that interleaving is not beneficial
+<unknown>:0:0: vectorized loop (vectorization width: 8, interleaved count: 1)
+<unknown>:0:0: the cost-model indicates that interleaving is not beneficial
+<unknown>:0:0: vectorized loop (vectorization width: 8, interleaved count: 1)
+<unknown>:0:0: the cost-model indicates that interleaving is not beneficial
+<unknown>:0:0: vectorized loop (vectorization width: 8, interleaved count: 1)
+<unknown>:0:0: the cost-model indicates that interleaving is not beneficial
+<unknown>:0:0: vectorized loop (vectorization width: 8, interleaved count: 1)
+<unknown>:0:0: the cost-model indicates that interleaving is not beneficial
+<unknown>:0:0: vectorized loop (vectorization width: 8, interleaved count: 1)
+<unknown>:0:0: the cost-model indicates that interleaving is not beneficial
+<unknown>:0:0: vectorized loop (vectorization width: 8, interleaved count: 1)
+<unknown>:0:0: the cost-model indicates that interleaving is not beneficial
+<unknown>:0:0: vectorized loop (vectorization width: 8, interleaved count: 1)
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Vectorizing horizontal reduction is possiblebut not beneficial with cost 5 and threshold 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Vectorizing horizontal reduction is possiblebut not beneficial with cost 5 and threshold 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Vectorizing horizontal reduction is possiblebut not beneficial with cost 6 and threshold 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Vectorizing horizontal reduction is possiblebut not beneficial with cost 6 and threshold 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Vectorizing horizontal reduction is possiblebut not beneficial with cost 5 and threshold 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Vectorizing horizontal reduction is possiblebut not beneficial with cost 5 and threshold 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Vectorizing horizontal reduction is possiblebut not beneficial with cost 6 and threshold 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Vectorizing horizontal reduction is possiblebut not beneficial with cost 6 and threshold 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Vectorizing horizontal reduction is possiblebut not beneficial with cost 5 and threshold 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Vectorizing horizontal reduction is possiblebut not beneficial with cost 5 and threshold 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Vectorizing horizontal reduction is possiblebut not beneficial with cost 6 and threshold 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Vectorizing horizontal reduction is possiblebut not beneficial with cost 6 and threshold 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Vectorizing horizontal reduction is possiblebut not beneficial with cost 5 and threshold 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Vectorizing horizontal reduction is possiblebut not beneficial with cost 5 and threshold 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Vectorizing horizontal reduction is possiblebut not beneficial with cost 6 and threshold 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Vectorizing horizontal reduction is possiblebut not beneficial with cost 6 and threshold 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: unrolled loop by a factor of 2 with a breakout at trip 0
+<unknown>:0:0: completely unrolled loop with 4 iterations
+<unknown>:0:0: unrolled loop by a factor of 2 with a breakout at trip 0
+<unknown>:0:0: completely unrolled loop with 4 iterations
+<unknown>:0:0: unrolled loop by a factor of 2 with a breakout at trip 0
+<unknown>:0:0: completely unrolled loop with 4 iterations
+<unknown>:0:0: unrolled loop by a factor of 2 with a breakout at trip 0
+<unknown>:0:0: completely unrolled loop with 4 iterations
+<unknown>:0:0: unrolled loop by a factor of 2 with a breakout at trip 0
+<unknown>:0:0: completely unrolled loop with 4 iterations
+<unknown>:0:0: unrolled loop by a factor of 2 with a breakout at trip 0
+<unknown>:0:0: completely unrolled loop with 4 iterations
+<unknown>:0:0: unrolled loop by a factor of 2 with a breakout at trip 0
+<unknown>:0:0: completely unrolled loop with 4 iterations
+<unknown>:0:0: unrolled loop by a factor of 2 with a breakout at trip 0
+<unknown>:0:0: completely unrolled loop with 4 iterations
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: the cost-model indicates that interleaving is not beneficial
+<unknown>:0:0: vectorized loop (vectorization width: 8, interleaved count: 1)
+<unknown>:0:0: the cost-model indicates that interleaving is not beneficial
+<unknown>:0:0: vectorized loop (vectorization width: 8, interleaved count: 1)
+<unknown>:0:0: the cost-model indicates that interleaving is not beneficial
+<unknown>:0:0: vectorized loop (vectorization width: 8, interleaved count: 1)
+<unknown>:0:0: the cost-model indicates that interleaving is not beneficial
+<unknown>:0:0: vectorized loop (vectorization width: 8, interleaved count: 1)
+<unknown>:0:0: the cost-model indicates that interleaving is not beneficial
+<unknown>:0:0: vectorized loop (vectorization width: 8, interleaved count: 1)
+<unknown>:0:0: the cost-model indicates that interleaving is not beneficial
+<unknown>:0:0: vectorized loop (vectorization width: 8, interleaved count: 1)
+<unknown>:0:0: the cost-model indicates that interleaving is not beneficial
+<unknown>:0:0: vectorized loop (vectorization width: 8, interleaved count: 1)
+<unknown>:0:0: the cost-model indicates that interleaving is not beneficial
+<unknown>:0:0: vectorized loop (vectorization width: 8, interleaved count: 1)
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Vectorizing horizontal reduction is possiblebut not beneficial with cost 5 and threshold 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Vectorizing horizontal reduction is possiblebut not beneficial with cost 5 and threshold 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Vectorizing horizontal reduction is possiblebut not beneficial with cost 6 and threshold 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Vectorizing horizontal reduction is possiblebut not beneficial with cost 6 and threshold 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Vectorizing horizontal reduction is possiblebut not beneficial with cost 5 and threshold 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Vectorizing horizontal reduction is possiblebut not beneficial with cost 5 and threshold 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Vectorizing horizontal reduction is possiblebut not beneficial with cost 6 and threshold 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Vectorizing horizontal reduction is possiblebut not beneficial with cost 6 and threshold 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Vectorizing horizontal reduction is possiblebut not beneficial with cost 5 and threshold 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Vectorizing horizontal reduction is possiblebut not beneficial with cost 5 and threshold 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Vectorizing horizontal reduction is possiblebut not beneficial with cost 6 and threshold 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Vectorizing horizontal reduction is possiblebut not beneficial with cost 6 and threshold 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Vectorizing horizontal reduction is possiblebut not beneficial with cost 5 and threshold 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Vectorizing horizontal reduction is possiblebut not beneficial with cost 5 and threshold 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Vectorizing horizontal reduction is possiblebut not beneficial with cost 6 and threshold 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Vectorizing horizontal reduction is possiblebut not beneficial with cost 6 and threshold 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: unrolled loop by a factor of 2 with a breakout at trip 0
+<unknown>:0:0: completely unrolled loop with 4 iterations
+<unknown>:0:0: unrolled loop by a factor of 2 with a breakout at trip 0
+<unknown>:0:0: completely unrolled loop with 4 iterations
+<unknown>:0:0: unrolled loop by a factor of 2 with a breakout at trip 0
+<unknown>:0:0: completely unrolled loop with 4 iterations
+<unknown>:0:0: unrolled loop by a factor of 2 with a breakout at trip 0
+<unknown>:0:0: completely unrolled loop with 4 iterations
+<unknown>:0:0: unrolled loop by a factor of 2 with a breakout at trip 0
+<unknown>:0:0: completely unrolled loop with 4 iterations
+<unknown>:0:0: unrolled loop by a factor of 2 with a breakout at trip 0
+<unknown>:0:0: completely unrolled loop with 4 iterations
+<unknown>:0:0: unrolled loop by a factor of 2 with a breakout at trip 0
+<unknown>:0:0: completely unrolled loop with 4 iterations
+<unknown>:0:0: unrolled loop by a factor of 2 with a breakout at trip 0
+<unknown>:0:0: completely unrolled loop with 4 iterations
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: the cost-model indicates that interleaving is not beneficial
+<unknown>:0:0: vectorized loop (vectorization width: 8, interleaved count: 1)
+<unknown>:0:0: the cost-model indicates that interleaving is not beneficial
+<unknown>:0:0: vectorized loop (vectorization width: 8, interleaved count: 1)
+<unknown>:0:0: the cost-model indicates that interleaving is not beneficial
+<unknown>:0:0: vectorized loop (vectorization width: 8, interleaved count: 1)
+<unknown>:0:0: the cost-model indicates that interleaving is not beneficial
+<unknown>:0:0: vectorized loop (vectorization width: 8, interleaved count: 1)
+<unknown>:0:0: the cost-model indicates that interleaving is not beneficial
+<unknown>:0:0: vectorized loop (vectorization width: 8, interleaved count: 1)
+<unknown>:0:0: the cost-model indicates that interleaving is not beneficial
+<unknown>:0:0: vectorized loop (vectorization width: 8, interleaved count: 1)
+<unknown>:0:0: the cost-model indicates that interleaving is not beneficial
+<unknown>:0:0: vectorized loop (vectorization width: 8, interleaved count: 1)
+<unknown>:0:0: the cost-model indicates that interleaving is not beneficial
+<unknown>:0:0: vectorized loop (vectorization width: 8, interleaved count: 1)
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Vectorizing horizontal reduction is possiblebut not beneficial with cost 5 and threshold 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Vectorizing horizontal reduction is possiblebut not beneficial with cost 5 and threshold 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Vectorizing horizontal reduction is possiblebut not beneficial with cost 6 and threshold 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Vectorizing horizontal reduction is possiblebut not beneficial with cost 6 and threshold 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Vectorizing horizontal reduction is possiblebut not beneficial with cost 5 and threshold 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Vectorizing horizontal reduction is possiblebut not beneficial with cost 5 and threshold 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Vectorizing horizontal reduction is possiblebut not beneficial with cost 6 and threshold 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Vectorizing horizontal reduction is possiblebut not beneficial with cost 6 and threshold 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Vectorizing horizontal reduction is possiblebut not beneficial with cost 5 and threshold 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Vectorizing horizontal reduction is possiblebut not beneficial with cost 5 and threshold 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Vectorizing horizontal reduction is possiblebut not beneficial with cost 6 and threshold 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Vectorizing horizontal reduction is possiblebut not beneficial with cost 6 and threshold 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Vectorizing horizontal reduction is possiblebut not beneficial with cost 5 and threshold 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Vectorizing horizontal reduction is possiblebut not beneficial with cost 5 and threshold 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Vectorizing horizontal reduction is possiblebut not beneficial with cost 6 and threshold 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Vectorizing horizontal reduction is possiblebut not beneficial with cost 6 and threshold 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: Cannot SLP vectorize list: vectorization was impossible with available vectorization factors
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: List vectorization was possible but not beneficial with cost 0 >= 0
+<unknown>:0:0: unrolled loop by a factor of 2 with a breakout at trip 0
+<unknown>:0:0: completely unrolled loop with 4 iterations
+<unknown>:0:0: unrolled loop by a factor of 2 with a breakout at trip 0
+<unknown>:0:0: completely unrolled loop with 4 iterations
+<unknown>:0:0: unrolled loop by a factor of 2 with a breakout at trip 0
+<unknown>:0:0: completely unrolled loop with 4 iterations
+<unknown>:0:0: unrolled loop by a factor of 2 with a breakout at trip 0
+<unknown>:0:0: completely unrolled loop with 4 iterations
+<unknown>:0:0: unrolled loop by a factor of 2 with a breakout at trip 0
+<unknown>:0:0: completely unrolled loop with 4 iterations
+<unknown>:0:0: unrolled loop by a factor of 2 with a breakout at trip 0
+<unknown>:0:0: completely unrolled loop with 4 iterations
+<unknown>:0:0: unrolled loop by a factor of 2 with a breakout at trip 0
+<unknown>:0:0: completely unrolled loop with 4 iterations
+<unknown>:0:0: unrolled loop by a factor of 2 with a breakout at trip 0
+<unknown>:0:0: completely unrolled loop with 4 iterations
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking getelementptr
+<unknown>:0:0: sinking trunc
+<unknown>:0:0: sinking getelementptr
