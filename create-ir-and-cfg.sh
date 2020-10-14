@@ -201,9 +201,9 @@ llvm-dis $(find . -path "*Kernel1*para*") -o ${target_path}/bicg_kernel1.ll
 llvm-dis $(find . -path "*Kernel2*para*") -o ${target_path}/bicg_kernel2.ll
 cd ${target_path}
 ${opt_cfg_command} bicg_kernel1.ll > /dev/null
-${dot_command} ._pocl_kernel_bicgKernel1.dot -o syr2k_kernel1.pdf
+${dot_command} ._pocl_kernel_bicgKernel1.dot -o bicg_kernel1.pdf
 ${opt_cfg_command} bicg_kernel2.ll > /dev/null
-${dot_command} ._pocl_kernel_bicgKernel2.dot -o syr2k_kernel2.pdf
+${dot_command} ._pocl_kernel_bicgKernel2.dot -o bicg_kernel2.pdf
 
 echo "gemm"
 rm -rf $POCL_CACHE_DIR
