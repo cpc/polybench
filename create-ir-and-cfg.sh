@@ -3,7 +3,7 @@ export POCL_KERNEL_CACHE=1
 
 opt_cfg_command="opt -dot-cfg "
 dot_command="dot -Tpdf "
-targer_dir="irs"
+targer_dir="master-pocl-11-llvm"
 cwd=$(pwd)
 target_path=$cwd/$targer_dir
 

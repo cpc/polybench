@@ -201,6 +201,7 @@ void cl_launch_kernel(int m, int n)
     localWorkSize_Kernel1[1] = DIM_LOCAL_WORK_GROUP_KERNEL_1_Y;
     globalWorkSize_Kernel1[0] = (size_t)ceil(((float)M) / ((float)DIM_LOCAL_WORK_GROUP_KERNEL_1_X)) * DIM_LOCAL_WORK_GROUP_KERNEL_1_X;
     globalWorkSize_Kernel1[1] = 1;
+    printf("local: %zu, global: %zu", localWorkSize_Kernel1[0], globalWorkSize_Kernel1[0]);
 
     localWorkSize_Kernel2[0] = DIM_LOCAL_WORK_GROUP_KERNEL_2_X;
     localWorkSize_Kernel2[1] = DIM_LOCAL_WORK_GROUP_KERNEL_2_Y;
