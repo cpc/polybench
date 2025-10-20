@@ -18,6 +18,7 @@
 #include <OpenCL/opencl.h>
 #else
 #include <CL/cl.h>
+#include <CL/cl_ext.h>
 #endif
 
 #define POLYBENCH_TIME 1
@@ -58,6 +59,7 @@ cl_kernel clKernel2;
 cl_kernel clKernel3;
 cl_command_queue clCommandQue;
 cl_program clProgram;
+cl_command_buffer_khr command_buffer;
 
 cl_mem a_mem_obj;
 cl_mem b_mem_obj;
@@ -215,8 +217,11 @@ void cl_launch_kernel(int ni, int nj, DATA_TYPE alpha, DATA_TYPE beta)
 	globalWorkSize[0] = (size_t)ceil(((float)NI) / ((float)DIM_LOCAL_WORK_GROUP_X)) * DIM_LOCAL_WORK_GROUP_X;
 	globalWorkSize[1] = (size_t)ceil(((float)NJ) / ((float)DIM_LOCAL_WORK_GROUP_Y)) * DIM_LOCAL_WORK_GROUP_Y;
 	
-	/* Start timer. */
-  	polybench_start_instruments;
+	cl_command_buffer_properties_khr props[]
+		= { CL_COMMAND_BUFFER_FLAGS_KHR, CL_COMMAND_BUFFER_SIMULTANEOUS_USE_KHR,
+			0 };
+	command_buffer 
+		= clCreateCommandBufferKHR(1, &clCommandQue, props, &errcode);
 
 	// Set the arguments of the kernel
 	errcode =  clSetKernelArg(clKernel1, 0, sizeof(cl_mem), (void *)&a_mem_obj);
@@ -230,8 +235,14 @@ void cl_launch_kernel(int ni, int nj, DATA_TYPE alpha, DATA_TYPE beta)
 	if(errcode != CL_SUCCESS) printf("Error in setting arguments1\n");
 
 	// Execute the OpenCL kernel
-	errcode = clEnqueueNDRangeKernel(clCommandQue, clKernel1, 2, NULL, globalWorkSize, localWorkSize, 0, NULL, NULL);
+	errcode = clCommandNDRangeKernelKHR(command_buffer, clCommandQue, NULL, clKernel1, 2, NULL, globalWorkSize, localWorkSize, 0, NULL, NULL, NULL);
 	if(errcode != CL_SUCCESS) printf("Error in launching kernel1\n");
+	clFinalizeCommandBufferKHR(command_buffer);
+
+	/* Start timer. */
+  	polybench_start_instruments;
+
+	clEnqueueCommandBufferKHR(0, NULL, command_buffer, 0, NULL, NULL);
 	clFinish(clCommandQue);
 	
 	/* Stop and print timer. */
@@ -251,6 +262,7 @@ void cl_clean_up()
 	errcode = clReleaseMemObject(c_mem_obj);
 	errcode = clReleaseCommandQueue(clCommandQue);
 	errcode = clReleaseContext(clGPUContext);
+	errcode |= clReleaseCommandBufferKHR(command_buffer);
 	if(errcode != CL_SUCCESS) printf("Error in cleanup\n");
 }
 

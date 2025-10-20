@@ -18,6 +18,7 @@
 #include <OpenCL/opencl.h>
 #else
 #include <CL/cl.h>
+#include <CL/cl_ext.h>
 #endif
 
 #define POLYBENCH_TIME 1
@@ -47,6 +48,7 @@ cl_device_id device_id;
 cl_uint num_devices;
 cl_uint num_platforms;
 cl_int errcode;
+cl_command_buffer_khr command_buffer;
 cl_context clGPUContext;
 cl_kernel clKernel1;
 cl_kernel clKernel2;
@@ -175,60 +177,6 @@ void cl_load_prog()
 }
 
 
-void cl_launch_kernel1(int k, int n)
-{
-	if (k < (_PB_N-1))
-	{
-		size_t localWorkSize[2], globalWorkSize[2];
-		localWorkSize[0] = 256;
-		localWorkSize[1] = 1;
-		globalWorkSize[0] = (size_t)ceil(((double)N - (double)(k + 1)) / 256.0) * 256;
-		globalWorkSize[1] = 1;
-	
-		// Set the arguments of the kernel
-		errcode = clSetKernelArg(clKernel1, 0, sizeof(cl_mem), (void *)&a_mem_obj);
-		errcode |= clSetKernelArg(clKernel1, 1, sizeof(int), (void *)&k);
-		errcode |= clSetKernelArg(clKernel1, 2, sizeof(int), (void *)&n);
-
-		if(errcode != CL_SUCCESS) printf("Error in seting arguments\n");
-
-		// Execute the OpenCL kernel
-		errcode = clEnqueueNDRangeKernel(clCommandQue, clKernel1, 2, NULL, globalWorkSize, localWorkSize, 0, NULL, NULL);
-		if(errcode != CL_SUCCESS) printf("Error in launching kernel\n");
-		clFinish(clCommandQue);
-	}
-}
-
-
-void cl_launch_kernel2(int k, int n)
-{
-	if (k < (_PB_N-1))
-	{
-		size_t localWorkSize[2], globalWorkSize[2];
-		localWorkSize[0] = 32;
-		localWorkSize[1] = 8;
-		globalWorkSize[0] = (size_t)ceil(((double)N - (double)(k + 1)) / 32.0) * 32;
-		globalWorkSize[1] = (size_t)ceil(((double)N - (double)(k + 1)) / 8.0) * 8;
-	
-		// Set the arguments of the kernel
-		errcode = clSetKernelArg(clKernel2, 0, sizeof(cl_mem), (void *)&a_mem_obj);
-		errcode |= clSetKernelArg(clKernel2, 1, sizeof(int), (void *)&k);
-		errcode |= clSetKernelArg(clKernel2, 2, sizeof(int), (void *)&n);
-	
-		if(errcode != CL_SUCCESS) printf("Error in seting arguments\n");
-
-		// Execute the OpenCL kernel
-		errcode = clEnqueueNDRangeKernel(clCommandQue, clKernel2, 2, NULL, globalWorkSize, localWorkSize, 0, NULL, NULL);
-		if(errcode != CL_SUCCESS) 
-		{
-			printf("Error in launching kernel\n");
-			printf("Nums: %d %d\n", globalWorkSize[0], globalWorkSize[1]);
-		}
-		clFinish(clCommandQue);
-	}
-}
-
-
 void cl_clean_up()
 {
 	// Clean up
@@ -240,6 +188,7 @@ void cl_clean_up()
 	errcode = clReleaseMemObject(a_mem_obj);
 	errcode = clReleaseCommandQueue(clCommandQue);
 	errcode = clReleaseContext(clGPUContext);
+	errcode |= clReleaseCommandBufferKHR(command_buffer);
 	if(errcode != CL_SUCCESS) printf("Error in cleanup\n");
 }
 
@@ -297,15 +246,80 @@ int main(void)
 	cl_mem_init(POLYBENCH_ARRAY(A));
 	cl_load_prog();
 	
-	/* Start timer. */
-  	polybench_start_instruments;
+	cl_command_buffer_properties_khr props[]
+		= { CL_COMMAND_BUFFER_FLAGS_KHR, CL_COMMAND_BUFFER_SIMULTANEOUS_USE_KHR | CL_COMMAND_BUFFER_MUTABLE_KHR,
+			0 };
+	command_buffer 
+		= clCreateCommandBufferKHR(1, &clCommandQue, props, &errcode);
+	cl_command_properties_khr command_props[3] = { CL_MUTABLE_DISPATCH_UPDATABLE_FIELDS_KHR,
+		CL_MUTABLE_DISPATCH_ARGUMENTS_KHR | CL_MUTABLE_DISPATCH_GLOBAL_SIZE_KHR, 0 };
+	cl_mutable_command_khr command1, command2;
 
-	int k;
-	for (k = 0; k < _PB_N; k++)
-    	{
-		cl_launch_kernel1(k, n);
-		cl_launch_kernel2(k, n);
+	int k = 0;
+	{
+		size_t localWorkSize[2], globalWorkSize[2];
+		localWorkSize[0] = DIM_LOCAL_WORK_GROUP_KERNEL_1_X;
+		localWorkSize[1] = 1;
+		globalWorkSize[0] = (size_t)ceil(((double)N - (double)(k + 1)) / DIM_LOCAL_WORK_GROUP_KERNEL_1_X) *  DIM_LOCAL_WORK_GROUP_KERNEL_1_X;;
+		globalWorkSize[1] = 1;
+
+		// Set the arguments of the kernel
+		errcode = clSetKernelArg(clKernel1, 0, sizeof(cl_mem), (void *)&a_mem_obj);
+		errcode |= clSetKernelArg(clKernel1, 1, sizeof(int), (void *)&k);
+		errcode |= clSetKernelArg(clKernel1, 2, sizeof(int), (void *)&n);
+
+		if(errcode != CL_SUCCESS) printf("Error in seting arguments\n");
+
+		// Execute the OpenCL kernel
+		errcode = clCommandNDRangeKernelKHR(command_buffer, clCommandQue, command_props, clKernel1, 2, NULL, globalWorkSize, localWorkSize, 0, NULL, NULL, &command1);
+		if(errcode != CL_SUCCESS) printf("Error in launching kernel\n");
 	}
+	{
+		size_t localWorkSize[2], globalWorkSize[2];
+		localWorkSize[0] = DIM_LOCAL_WORK_GROUP_KERNEL_2_X;
+		localWorkSize[1] = DIM_LOCAL_WORK_GROUP_KERNEL_2_Y;
+		globalWorkSize[0] = (size_t)ceil(((double)N - (double)(k + 1)) / DIM_LOCAL_WORK_GROUP_KERNEL_2_X) * DIM_LOCAL_WORK_GROUP_KERNEL_2_X;
+		globalWorkSize[1] = (size_t)ceil(((double)N - (double)(k + 1)) / DIM_LOCAL_WORK_GROUP_KERNEL_2_Y) * DIM_LOCAL_WORK_GROUP_KERNEL_2_Y;
+
+		// Set the arguments of the kernel
+		errcode = clSetKernelArg(clKernel2, 0, sizeof(cl_mem), (void *)&a_mem_obj);
+		errcode |= clSetKernelArg(clKernel2, 1, sizeof(int), (void *)&k);
+		errcode |= clSetKernelArg(clKernel2, 2, sizeof(int), (void *)&n);
+
+		if(errcode != CL_SUCCESS) printf("Error in seting arguments\n");
+
+		// Execute the OpenCL kernel
+		errcode = clCommandNDRangeKernelKHR(command_buffer, clCommandQue, command_props, clKernel2, 2, NULL, globalWorkSize, localWorkSize, 0, NULL, NULL, &command2);
+		if(errcode != CL_SUCCESS) 
+		{
+			printf("Error in launching kernel\n");
+			printf("Nums: %d %d\n", globalWorkSize[0], globalWorkSize[1]);
+		}
+	}
+	clFinalizeCommandBufferKHR(command_buffer);
+
+	/* Start timer. */
+	polybench_start_instruments;
+
+	for (k = 0; k < _PB_N - 1; k++)
+	{
+		size_t globalWorkSize1[2];
+		globalWorkSize1[0] = (size_t)ceil(((double)N - (double)(k + 1)) / DIM_LOCAL_WORK_GROUP_KERNEL_1_X) *  DIM_LOCAL_WORK_GROUP_KERNEL_1_X;;
+		globalWorkSize1[1] = 1;
+		size_t globalWorkSize2[2];
+		globalWorkSize2[0] = (size_t)ceil(((double)N - (double)(k + 1)) / DIM_LOCAL_WORK_GROUP_KERNEL_2_X) * DIM_LOCAL_WORK_GROUP_KERNEL_2_X;
+		globalWorkSize2[1] = (size_t)ceil(((double)N - (double)(k + 1)) / DIM_LOCAL_WORK_GROUP_KERNEL_2_Y) * DIM_LOCAL_WORK_GROUP_KERNEL_2_Y;
+		cl_mutable_dispatch_arg_khr new_args = {1, sizeof(int), &k};
+		cl_mutable_dispatch_config_khr dispatch_config = {command1, 1, 0, 0, 0, &new_args, NULL, NULL, NULL, globalWorkSize1, NULL};
+		cl_mutable_dispatch_arg_khr new_args2 = {1, sizeof(int), &k};
+		cl_mutable_dispatch_config_khr dispatch_config2 = {command2, 1, 0, 0, 0, &new_args2, NULL, NULL, NULL, globalWorkSize2, NULL};
+		cl_command_buffer_update_type_khr config_types[2] = { CL_STRUCTURE_TYPE_MUTABLE_DISPATCH_CONFIG_KHR, CL_STRUCTURE_TYPE_MUTABLE_DISPATCH_CONFIG_KHR };
+		const void* configs[2] = { &dispatch_config, &dispatch_config2};
+		clUpdateMutableCommandsKHR(command_buffer, 2, config_types, configs);
+		clEnqueueCommandBufferKHR(0, NULL, command_buffer, 0, NULL, NULL);
+	}
+
+	clFinish(clCommandQue);
 
 	/* Stop and print timer. */
 	printf("GPU Time in seconds:\n");

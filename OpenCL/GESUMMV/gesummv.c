@@ -18,6 +18,7 @@
 #include <OpenCL/opencl.h>
 #else
 #include <CL/cl.h>
+#include <CL/cl_ext.h>
 #endif
 
 #define POLYBENCH_TIME 1
@@ -42,6 +43,7 @@
 
 char str_temp[1024];
 
+cl_command_buffer_khr command_buffer;
 cl_platform_id platform_id;
 cl_device_id device_id;   
 cl_uint num_devices;
@@ -224,6 +226,11 @@ void cl_launch_kernel(int n, DATA_TYPE alpha, DATA_TYPE beta)
 	localWorkSize[1] = DIM_LOCAL_WORK_GROUP_Y;
 	globalWorkSize[0] = (size_t)ceil(((float)N) / ((float)DIM_LOCAL_WORK_GROUP_X)) * DIM_LOCAL_WORK_GROUP_X;
 	globalWorkSize[1] = (size_t)ceil(((float)N) / ((float)DIM_LOCAL_WORK_GROUP_Y)) * DIM_LOCAL_WORK_GROUP_Y;
+	cl_command_buffer_properties_khr props[]
+		= { CL_COMMAND_BUFFER_FLAGS_KHR, CL_COMMAND_BUFFER_SIMULTANEOUS_USE_KHR,
+			0 };
+	command_buffer 
+		= clCreateCommandBufferKHR(1, &clCommandQue, props, &errcode);
 
 	/* Start timer. */
   	polybench_start_instruments;
@@ -241,8 +248,16 @@ void cl_launch_kernel(int n, DATA_TYPE alpha, DATA_TYPE beta)
 	if(errcode != CL_SUCCESS) printf("Error in seting arguments1\n");
 
 	// Execute the OpenCL kernel
-	errcode = clEnqueueNDRangeKernel(clCommandQue, clKernel1, 1, NULL, globalWorkSize, localWorkSize, 0, NULL, NULL);
+	errcode = clCommandNDRangeKernelKHR(command_buffer, clCommandQue, NULL, clKernel1, 1, NULL, globalWorkSize, localWorkSize, 0, NULL, NULL, NULL);
 	if(errcode != CL_SUCCESS) printf("Error in launching kernel1\n");
+
+	clFinalizeCommandBufferKHR(command_buffer);
+
+	/* Start timer. */
+  	polybench_start_instruments;
+
+	clEnqueueCommandBufferKHR(0, NULL, command_buffer, 0, NULL, NULL);
+
 	clFinish(clCommandQue);
 
 	/* Stop and print timer. */
