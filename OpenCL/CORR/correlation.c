@@ -24,7 +24,7 @@
 #define POLYBENCH_TIME 1
 
 //select the OpenCL device to use (can be GPU, CPU, or Accelerator such as Intel Xeon Phi)
-#define OPENCL_DEVICE_SELECTION CL_DEVICE_TYPE_GPU
+#define OPENCL_DEVICE_SELECTION CL_DEVICE_TYPE_ALL
 
 #include "correlation.h"
 #include "../../common/polybench.h"
@@ -89,7 +89,11 @@ void compareResults(int m, int n, DATA_TYPE POLYBENCH_2D(symmat, M, N, m, n), DA
 	}
 	
 	// print results
-	printf("Non-Matching CPU-GPU Outputs Beyond Error Threshold of %4.2f Percent: %d\n", PERCENT_DIFF_ERROR_THRESHOLD, fail);
+FILE *file;
+file = fopen("output.txt", "w");
+fprintf(file, "Non-Matching CPU-GPU Outputs Beyond Error Threshold of %4.2f Percent: %d\n", PERCENT_DIFF_ERROR_THRESHOLD, fail);
+fclose(file);
+
 }
 
 
@@ -107,17 +111,18 @@ void read_cl_file()
 }
 
 
-void init_arrays(int m, int n, DATA_TYPE POLYBENCH_2D(data, M, N, m, n))
+void init_arrays(int m, int n, DATA_TYPE POLYBENCH_2D(data, M, N, m, n), DATA_TYPE POLYBENCH_2D(symmat,M,N,m,n))
 {
 	int i, j;
-	
+
 	for (i=0; i < m; i++) 
 	{
-    		for (j=0; j < n; j++) 
+		for (j=0; j < n; j++)
 		{
-       		data[i][j] = ((DATA_TYPE) i*j)/ M;	
-       	}
-    	}
+			data[i][j] = ((DATA_TYPE) i*j)/ M;	
+			symmat[i][j] = 0.0;
+		}
+	}
 }
 
 
@@ -411,7 +416,7 @@ int main(void)
 	POLYBENCH_2D_ARRAY_DECL(symmat,DATA_TYPE,M,N,m,n);
   	POLYBENCH_2D_ARRAY_DECL(symmat_outputFromGpu,DATA_TYPE,M,N,m,n);
   	
-	init_arrays(m, n, POLYBENCH_ARRAY(data));
+	init_arrays(m, n, POLYBENCH_ARRAY(data), POLYBENCH_ARRAY(symmat_outputFromGpu));
 
 	read_cl_file();
 	cl_initialization();

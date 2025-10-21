@@ -26,12 +26,18 @@
 
 #  ifdef SMALL_DATASET
 #define TSTEPS 1
-#define N 1024
+#define N 8
+/* Thread block dimensions */
+#define DIM_LOCAL_WORK_GROUP_X 8
+#define DIM_LOCAL_WORK_GROUP_Y 1
 #  endif
 
 #  ifdef STANDARD_DATASET /* Default if unspecified. */
 #define TSTEPS 1
 #define N 1024
+/* Thread block dimensions */
+#define DIM_LOCAL_WORK_GROUP_X 256
+#define DIM_LOCAL_WORK_GROUP_Y 1
 #  endif
 
 #  ifdef LARGE_DATASET
@@ -52,9 +58,6 @@
 #  define DATA_PRINTF_MODIFIER "%0.2lf "
 # endif
 
-/* Thread block dimensions */
-#define DIM_LOCAL_WORK_GROUP_X 256
-#define DIM_LOCAL_WORK_GROUP_Y 1
 
 
 #endif /* !ADI*/

@@ -24,7 +24,7 @@
 #  endif
 
 #  ifdef SMALL_DATASET
-#define N 4096
+#define N 32
 #  endif
 
 #  ifdef STANDARD_DATASET /* Default if unspecified. */

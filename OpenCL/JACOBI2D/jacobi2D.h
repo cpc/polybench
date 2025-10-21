@@ -25,8 +25,8 @@
 #  endif
 
 #  ifdef SMALL_DATASET
-#define TSTEPS 20
-#define N 4096
+#define TSTEPS 4
+#define N 32
 #  endif
 
 #  ifdef STANDARD_DATASET /* Default if unspecified. */

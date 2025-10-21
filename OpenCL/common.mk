@@ -1,9 +1,17 @@
-OpenCL_SDK=/global/homes/s/sgrauerg/NVIDIA_GPU_Computing_SDK
-INCLUDE=-I${OpenCL_SDK}/OpenCL/common/inc -I../../common
-LIBPATH=-L${OpenCL_SDK}/OpenCL/common/lib -L${OpenCL_SDK}/shared/lib
-LIB=-lOpenCL -lm
-all:
-	gcc -O3 ${INCLUDE} ${LIBPATH} ${LIB} ${CFILES} -o ${EXECUTABLE}
+
+INCLUDE=-I/home/topi/pocl/main/include -I../../common
+
+LIB=-lm -lOpenCL
+LIBPATH=-L/home/topi/pocl/main/build_cpu/lib/CL -Wl,-rpath=/home/topi/pocl/main/build_cpu/lib/CL/
+
+application: ${CFILES}
+	gcc -O3 -DCL_TARGET_OPENCL_VERSION=120 ${INCLUDE} ${CFILES} -o application ${LIBPATH} ${LIB}
+
+output.txt: application
+	./application
+
+all: output.txt
 
 clean:
-	rm -f *~ *.exe
+	rm -f application
+	rm -f output.txt

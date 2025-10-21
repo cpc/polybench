@@ -24,11 +24,25 @@
 #  endif
 
 #  ifdef SMALL_DATASET
-#define N 2048
+#define N 16
+/* Thread block dimensions for kernel 1 */
+#define DIM_LOCAL_WORK_GROUP_KERNEL_1_X 8
+#define DIM_LOCAL_WORK_GROUP_KERNEL_1_Y 1
+
+/* Thread block dimensions for kernel 2 */
+#define DIM_LOCAL_WORK_GROUP_KERNEL_2_X 4
+#define DIM_LOCAL_WORK_GROUP_KERNEL_2_Y 2
 #  endif
 
 #  ifdef STANDARD_DATASET /* Default if unspecified. */
 #define N 2048
+/* Thread block dimensions for kernel 1 */
+#define DIM_LOCAL_WORK_GROUP_KERNEL_1_X 256
+#define DIM_LOCAL_WORK_GROUP_KERNEL_1_Y 1
+
+/* Thread block dimensions for kernel 2 */
+#define DIM_LOCAL_WORK_GROUP_KERNEL_2_X 32
+#define DIM_LOCAL_WORK_GROUP_KERNEL_2_Y 8
 #  endif
 
 #  ifdef LARGE_DATASET
@@ -47,13 +61,6 @@
 #  define DATA_PRINTF_MODIFIER "%0.2lf "
 # endif
 
-/* Thread block dimensions for kernel 1 */
-#define DIM_LOCAL_WORK_GROUP_KERNEL_1_X 256
-#define DIM_LOCAL_WORK_GROUP_KERNEL_1_Y 1
-
-/* Thread block dimensions for kernel 2 */
-#define DIM_LOCAL_WORK_GROUP_KERNEL_2_X 32
-#define DIM_LOCAL_WORK_GROUP_KERNEL_2_Y 8
 
 
 #endif /* !LU*/

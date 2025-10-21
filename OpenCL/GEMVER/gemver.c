@@ -11,6 +11,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <math.h>
 #include <sys/time.h>
 
 #ifdef __APPLE__
@@ -22,7 +23,7 @@
 #define POLYBENCH_TIME 1
 
 //select the OpenCL device to use (can be GPU, CPU, or Accelerator such as Intel Xeon Phi)
-#define OPENCL_DEVICE_SELECTION CL_DEVICE_TYPE_GPU
+#define OPENCL_DEVICE_SELECTION CL_DEVICE_TYPE_ALL
 
 #include "gemver.h"
 #include "../../common/polybench.h"
@@ -71,7 +72,7 @@ FILE *fp;
 char *source_str;
 size_t source_size;
 
-//#define RUN_ON_CPU
+#define RUN_ON_CPU
 
 
 void compareResults(DATA_TYPE POLYBENCH_1D(w1,N,n), DATA_TYPE POLYBENCH_1D(w2,N,n))
@@ -88,7 +89,11 @@ void compareResults(DATA_TYPE POLYBENCH_1D(w1,N,n), DATA_TYPE POLYBENCH_1D(w2,N,
 	}
 		
 	// Print results
-	printf("Non-Matching CPU-GPU Outputs Beyond Error Threshold of %4.2f Percent: %d\n", PERCENT_DIFF_ERROR_THRESHOLD, fail);
+FILE *file;
+file = fopen("output.txt", "w");
+fprintf(file, "Non-Matching CPU-GPU Outputs Beyond Error Threshold of %4.2f Percent: %d\n", PERCENT_DIFF_ERROR_THRESHOLD, fail);
+fclose(file);
+
 }
 
 

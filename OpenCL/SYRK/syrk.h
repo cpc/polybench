@@ -25,13 +25,17 @@
 #  endif
 
 #  ifdef SMALL_DATASET
-#define NI 1024
-#define NJ 1024
+#define NI 16
+#define NJ 16
+#define DIM_LOCAL_WORK_GROUP_X 16
+#define DIM_LOCAL_WORK_GROUP_Y 2
 #  endif
 
 #  ifdef STANDARD_DATASET /* Default if unspecified. */
 #define NI 1024
 #define NJ 1024
+#define DIM_LOCAL_WORK_GROUP_X 32
+#define DIM_LOCAL_WORK_GROUP_Y 8
 #  endif
 
 #  ifdef LARGE_DATASET
@@ -53,9 +57,6 @@
 #  define DATA_PRINTF_MODIFIER "%0.2lf "
 # endif
 
-/* Thread block dimensions */
-#define DIM_LOCAL_WORK_GROUP_X 32
-#define DIM_LOCAL_WORK_GROUP_Y 8
 
 
 #endif /* !SYRK*/

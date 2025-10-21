@@ -26,15 +26,19 @@
 #  endif
 
 #  ifdef SMALL_DATASET
-#define TMAX 500
-#define NX 2048
-#define NY 2048
+#define TMAX 2
+#define NX 32
+#define NY 32
+#define DIM_LOCAL_WORK_GROUP_X 4
+#define DIM_LOCAL_WORK_GROUP_Y 4
 #  endif
 
 #  ifdef STANDARD_DATASET /* Default if unspecified. */
 #define TMAX 500
 #define NX 2048
 #define NY 2048
+#define DIM_LOCAL_WORK_GROUP_X 32
+#define DIM_LOCAL_WORK_GROUP_Y 8
 #  endif
 
 #  ifdef LARGE_DATASET
@@ -57,9 +61,6 @@
 #  define DATA_PRINTF_MODIFIER "%0.2lf "
 # endif
 
-/* Thread block dimensions */
-#define DIM_LOCAL_WORK_GROUP_X 32
-#define DIM_LOCAL_WORK_GROUP_Y 8
 
 
 #endif /* !FDTD2D*/

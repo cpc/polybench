@@ -25,13 +25,19 @@
 #  endif
 
 #  ifdef SMALL_DATASET
-#define NX 4096
-#define NY 4096
+#define NX 4
+#define NY 4
+/* Thread block dimensions */
+#define DIM_LOCAL_WORK_GROUP_X 4
+#define DIM_LOCAL_WORK_GROUP_Y 1
 #  endif
 
 #  ifdef STANDARD_DATASET /* Default if unspecified. */
 #define NX 4096
 #define NY 4096
+/* Thread block dimensions */
+#define DIM_LOCAL_WORK_GROUP_X 256
+#define DIM_LOCAL_WORK_GROUP_Y 1
 #  endif
 
 #  ifdef LARGE_DATASET
@@ -53,9 +59,6 @@
 #  define DATA_PRINTF_MODIFIER "%0.2lf "
 # endif
 
-/* Thread block dimensions */
-#define DIM_LOCAL_WORK_GROUP_X 256
-#define DIM_LOCAL_WORK_GROUP_Y 1
 
 
 #endif /* !BICG*/

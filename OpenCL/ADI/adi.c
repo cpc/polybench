@@ -23,7 +23,7 @@
 #define POLYBENCH_TIME 1
 
 //select the OpenCL device to use (can be GPU, CPU, or Accelerator such as Intel Xeon Phi)
-#define OPENCL_DEVICE_SELECTION CL_DEVICE_TYPE_GPU
+#define OPENCL_DEVICE_SELECTION CL_DEVICE_TYPE_ALL
 
 #include "adi.h"
 #include "../../common/polybench.h"
@@ -69,7 +69,7 @@ unsigned int mem_size_A;
 unsigned int mem_size_B;
 unsigned int mem_size_C;
 
-//define RUN_ON_CPU
+#define RUN_ON_CPU
 
 
 void init_array(DATA_TYPE POLYBENCH_2D(A,N,N,n,n), DATA_TYPE POLYBENCH_2D(B,N,N,n,n), DATA_TYPE POLYBENCH_2D(X,N,N,n,n))
@@ -117,7 +117,11 @@ void compareResults(DATA_TYPE POLYBENCH_2D(B1,N,N,n,n), DATA_TYPE POLYBENCH_2D(B
 	}
 
 	// Print results
-	printf("Non-Matching CPU-GPU Outputs Beyond Error Threshold of %4.2f Percent: %d\n", PERCENT_DIFF_ERROR_THRESHOLD, fail);
+FILE *file;
+file = fopen("output.txt", "w");
+fprintf(file, "Non-Matching CPU-GPU Outputs Beyond Error Threshold of %4.2f Percent: %d\n", PERCENT_DIFF_ERROR_THRESHOLD, fail);
+fclose(file);
+
 }
 
 

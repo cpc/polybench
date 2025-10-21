@@ -23,7 +23,7 @@
 #define POLYBENCH_TIME 1
 
 //select the OpenCL device to use (can be GPU, CPU, or Accelerator such as Intel Xeon Phi)
-#define OPENCL_DEVICE_SELECTION CL_DEVICE_TYPE_GPU
+#define OPENCL_DEVICE_SELECTION CL_DEVICE_TYPE_ALL
 
 #include "gesummv.h"
 #include "../../common/polybench.h"
@@ -81,12 +81,16 @@ void compareResults(int n, DATA_TYPE POLYBENCH_1D(y,N,n), DATA_TYPE POLYBENCH_1D
 	}
 	
 	// Print results
-	printf("Non-Matching CPU-GPU Outputs Beyond Error Threshold of %4.2f Percent: %d\n", PERCENT_DIFF_ERROR_THRESHOLD, fail);
+FILE *file;
+file = fopen("output.txt", "w");
+fprintf(file, "Non-Matching CPU-GPU Outputs Beyond Error Threshold of %4.2f Percent: %d\n", PERCENT_DIFF_ERROR_THRESHOLD, fail);
+fclose(file);
+
 }
 
 
 void init(int n, DATA_TYPE *alpha, DATA_TYPE *beta, DATA_TYPE POLYBENCH_2D(A,N,N,n,n), DATA_TYPE POLYBENCH_2D(B,N,N,n,n), 
-	DATA_TYPE POLYBENCH_1D(x,N,n))
+	DATA_TYPE POLYBENCH_1D(x,N,n), DATA_TYPE POLYBENCH_1D(y,N,n), DATA_TYPE POLYBENCH_1D(tmp,N,n))
 {
   	int i, j;
 
@@ -96,6 +100,8 @@ void init(int n, DATA_TYPE *alpha, DATA_TYPE *beta, DATA_TYPE POLYBENCH_2D(A,N,N
  	for (i = 0; i < n; i++)
     	{
     		x[i] = ((DATA_TYPE) i) / N;
+		y[i] = 0.0;
+		tmp[i] = 0.0;
       	
 		for (j = 0; j < n; j++) 
 		{
@@ -293,7 +299,8 @@ int main(void)
 	POLYBENCH_1D_ARRAY_DECL(y,DATA_TYPE,N,n);
 	POLYBENCH_1D_ARRAY_DECL(y_outputFromGpu,DATA_TYPE,N,n);
 
-	init(n, &alpha, &beta, POLYBENCH_ARRAY(A), POLYBENCH_ARRAY(B), POLYBENCH_ARRAY(x));
+	init(n, &alpha, &beta, POLYBENCH_ARRAY(A), POLYBENCH_ARRAY(B), POLYBENCH_ARRAY(x),
+		POLYBENCH_ARRAY(y), POLYBENCH_ARRAY(tmp));
 	
 	read_cl_file();
 	cl_initialization();

@@ -27,10 +27,13 @@
 #  endif
 
 #  ifdef SMALL_DATASET
-# define NI 2048
-# define NJ 2048
-# define NK 2048
-# define NL 2048
+# define NI 8
+# define NJ 8
+# define NK 8
+# define NL 8
+/* Thread block dimensions */
+#define DIM_LOCAL_WORK_GROUP_X 8
+#define DIM_LOCAL_WORK_GROUP_Y 8
 #  endif
 
 #  ifdef STANDARD_DATASET /* Default if unspecified. */
@@ -38,6 +41,9 @@
 # define NJ 2048
 # define NK 2048
 # define NL 2048
+/* Thread block dimensions */
+#define DIM_LOCAL_WORK_GROUP_X 32
+#define DIM_LOCAL_WORK_GROUP_Y 8
 #  endif
 
 #  ifdef LARGE_DATASET
@@ -65,9 +71,6 @@
 #  define DATA_PRINTF_MODIFIER "%0.2lf "
 # endif
 
-/* Thread block dimensions */
-#define DIM_LOCAL_WORK_GROUP_X 32
-#define DIM_LOCAL_WORK_GROUP_Y 8
 
 
 #endif /* !TWOMM*/
