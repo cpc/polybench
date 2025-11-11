@@ -1,8 +1,11 @@
 README
 
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
-* PolyBench/GPU 1.0:  PolyBench Benchmarks on the GPU using CUDA, OpenCL, HMPP, and OpenACC.  *
+* PolyBench/GPU 1.0:  PolyBench Benchmarks on the GPU using OpenCL and OpenCL command buffers
 * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+To be more usable in PoCL integration tests, other than OpenCL versions of the benchmarks have been cut out.
+There are new OpenCL command buffer-based implementations made by Topi Leppänen in the OpenCL-command-buffer folder.
 
 Copyright (c) 2012, 2013 University of Delaware
 Contact:  Scott Grauer-Gray <sgrauerg@gmail.com>

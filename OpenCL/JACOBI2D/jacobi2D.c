@@ -29,7 +29,6 @@
 #include <OpenCL/opencl.h>
 #else
 #include <CL/cl.h>
-#include <CL/cl_ext.h>
 #endif
 
 #define MAX_SOURCE_SIZE (0x100000)
@@ -53,7 +52,6 @@ cl_kernel clKernel2;
 cl_command_queue clCommandQue;
 cl_program clProgram;
 cl_mem a_mem_obj;
-cl_command_buffer_khr command_buffer;
 cl_mem b_mem_obj;
 cl_mem c_mem_obj;
 FILE *fp;
@@ -204,8 +202,9 @@ void cl_launch_kernel1(int n)
 	if(errcode != CL_SUCCESS) printf("Error in seting arguments\n");
 
 	// Execute the OpenCL kernel
-	errcode = clCommandNDRangeKernelKHR(command_buffer, clCommandQue, NULL, clKernel1, 2, NULL, globalWorkSize, localWorkSize, 0, NULL, NULL, NULL);
+	errcode = clEnqueueNDRangeKernel(clCommandQue, clKernel1, 2, NULL, globalWorkSize, localWorkSize, 0, NULL, NULL);
 	if(errcode != CL_SUCCESS) printf("Error in launching kernel\n");
+	clFinish(clCommandQue);
 }
 
 void cl_launch_kernel2(int n)
@@ -223,8 +222,9 @@ void cl_launch_kernel2(int n)
 	if(errcode != CL_SUCCESS) printf("Error in seting arguments\n");
 
 	// Execute the OpenCL kernel
-	errcode = clCommandNDRangeKernelKHR(command_buffer, clCommandQue, NULL, clKernel2, 2, NULL, globalWorkSize, localWorkSize, 0, NULL, NULL, NULL);
+	errcode = clEnqueueNDRangeKernel(clCommandQue, clKernel2, 2, NULL, globalWorkSize, localWorkSize, 0, NULL, NULL);
 	if(errcode != CL_SUCCESS) printf("Error in launching kernel\n");
+	clFinish(clCommandQue);
 }
 
 void cl_launch_kernels()
@@ -239,12 +239,14 @@ void cl_launch_kernels()
 	for (t = 0; t < TSTEPS ; t++)
 	{	
 		// Execute the OpenCL kernel
-		errcode = clCommandNDRangeKernelKHR(command_buffer, clCommandQue, NULL, clKernel1, 2, NULL, globalWorkSize, localWorkSize, 0, NULL, NULL, NULL);
+		errcode = clEnqueueNDRangeKernel(clCommandQue, clKernel1, 2, NULL, globalWorkSize, localWorkSize, 0, NULL, NULL);
 		if(errcode != CL_SUCCESS) printf("Error in launching kernel\n");
+		clFinish(clCommandQue);
 
 		// Execute the OpenCL kernel
-		errcode = clCommandNDRangeKernelKHR(command_buffer, clCommandQue, NULL, clKernel2, 2, NULL, globalWorkSize, localWorkSize, 0, NULL, NULL, NULL);
+		errcode = clEnqueueNDRangeKernel(clCommandQue, clKernel2, 2, NULL, globalWorkSize, localWorkSize, 0, NULL, NULL);
 		if(errcode != CL_SUCCESS) printf("Error in launching kernel\n");
+		clFinish(clCommandQue);
 	}
 }
 
@@ -260,7 +262,6 @@ void cl_clean_up()
 	errcode = clReleaseMemObject(b_mem_obj);
 	errcode = clReleaseCommandQueue(clCommandQue);
 	errcode = clReleaseContext(clGPUContext);
-	errcode |= clReleaseCommandBufferKHR(command_buffer);
 	if(errcode != CL_SUCCESS) printf("Error in cleanup\n");
 }
 
@@ -325,24 +326,15 @@ int main(void)
 	cl_mem_init(POLYBENCH_ARRAY(a), POLYBENCH_ARRAY(b));
 	cl_load_prog();
 	
-	cl_command_buffer_properties_khr props[]
-		= { CL_COMMAND_BUFFER_FLAGS_KHR, CL_COMMAND_BUFFER_SIMULTANEOUS_USE_KHR,
-			0 };
-	command_buffer 
-		= clCreateCommandBufferKHR(1, &clCommandQue, props, &errcode);
-	cl_launch_kernel1(n);
-	cl_launch_kernel2(n);
-	clFinalizeCommandBufferKHR(command_buffer);
-
 	/* Start timer. */
   	polybench_start_instruments;
 
 	int t;
 	for (t = 0; t < _PB_TSTEPS ; t++)
     	{
-		clEnqueueCommandBufferKHR(0, NULL, command_buffer, 0, NULL, NULL);
+		cl_launch_kernel1(n);
+		cl_launch_kernel2(n);
 	}
-	clFinish(clCommandQue);
 
 
 	/* Stop and print timer. */
