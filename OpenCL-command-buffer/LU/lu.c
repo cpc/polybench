@@ -134,7 +134,6 @@ int cl_initialization()
 	if(errcode == CL_SUCCESS) printf("platform version is %s\n",str_temp);
 
 	errcode = clGetDeviceIDs( platform_id, OPENCL_DEVICE_SELECTION, 1, &device_id, &num_devices);
-	if(errcode == CL_SUCCESS) printf("device id is %d\n",device_id);
 
 	errcode = clGetDeviceInfo(device_id,CL_DEVICE_NAME, sizeof(str_temp), str_temp,NULL);
 	if(errcode == CL_SUCCESS) printf("device name is %s\n",str_temp);
@@ -313,7 +312,7 @@ int main(void)
 		if(errcode != CL_SUCCESS) 
 		{
 			printf("Error in launching kernel\n");
-			printf("Nums: %d %d\n", globalWorkSize[0], globalWorkSize[1]);
+			printf("Nums: %zu %zu\n", globalWorkSize[0], globalWorkSize[1]);
 		}
 	}
 	clFinalizeCommandBufferKHR(command_buffer);

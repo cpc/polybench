@@ -31,6 +31,8 @@ endfunction()
 
 
 add_compile_options("-DCL_TARGET_OPENCL_VERSION=300")
+add_compile_options("-DCL_USE_DEPRECATED_OPENCL_1_2_APIS")
+add_compile_options("-DCL_USE_DEPRECATED_OPENCL_1_1_APIS")
 add_compile_options("-DSMALL_DATASET=1")
 include_directories("${OPENCL_INCLUDE_PATH}")
 link_libraries("${OPENCL_opencl_LIBRARY}")
