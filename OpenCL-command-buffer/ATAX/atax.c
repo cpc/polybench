@@ -90,6 +90,11 @@ file = fopen("output.txt", "w");
 fprintf(file, "Non-Matching CPU-GPU Outputs Beyond Error Threshold of %4.2f Percent: %d\n", PERCENT_DIFF_ERROR_THRESHOLD, fail);
 fclose(file);
 
+	if (fail == 0)
+		printf("pass\n");
+	else
+		printf("fail\n");
+
 }
 
 

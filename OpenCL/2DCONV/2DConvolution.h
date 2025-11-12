@@ -25,11 +25,11 @@
 #  endif
 
 #  ifdef SMALL_DATASET
-#define NI 4
-#define NJ 128
+#define NI 64
+#define NJ 64
 /* Thread block dimensions */
-#define DIM_LOCAL_WORK_GROUP_X 4
-#define DIM_LOCAL_WORK_GROUP_Y 4
+#define DIM_LOCAL_WORK_GROUP_X 32
+#define DIM_LOCAL_WORK_GROUP_Y 8
 #  endif
 
 #  ifdef STANDARD_DATASET /* Default if unspecified. */

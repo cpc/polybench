@@ -122,6 +122,11 @@ file = fopen("output.txt", "w");
 fprintf(file, "Non-Matching CPU-GPU Outputs Beyond Error Threshold of %4.2f Percent: %d\n", PERCENT_DIFF_ERROR_THRESHOLD, fail);
 fclose(file);
 
+	if (fail == 0)
+		printf("pass\n");
+	else
+		printf("fail\n");
+
 }
 
 
@@ -191,8 +196,10 @@ void cl_load_prog()
 	clProgram = clCreateProgramWithSource(clGPUContext, 1, (const char **)&source_str, (const size_t *)&source_size, &errcode);
 	if(errcode != CL_SUCCESS) printf("Error in creating program\n");
 
+	char options[128];
+	snprintf(options, 128, "-DN=%i",N);
 	// Build the program
-	errcode = clBuildProgram(clProgram, 1, &device_id, NULL, NULL, NULL);
+	errcode = clBuildProgram(clProgram, 1, &device_id, options, NULL, NULL);
 	if(errcode != CL_SUCCESS) printf("Error in building program\n");
 		
 	// Create the OpenCL kernel

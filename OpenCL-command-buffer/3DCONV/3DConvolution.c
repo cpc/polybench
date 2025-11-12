@@ -93,7 +93,7 @@ void init(int ni, int nj, int nk, DATA_TYPE POLYBENCH_3D(A, NI, NJ, NK, ni, nj, 
 }
 
 
-void cl_initialization()
+int cl_initialization()
 {	
 	// Get platform and device information
 	errcode = clGetPlatformIDs(1, &platform_id, &num_platforms);
@@ -115,6 +115,17 @@ void cl_initialization()
 	errcode = clGetDeviceInfo(device_id,CL_DEVICE_NAME, sizeof(str_temp), str_temp,NULL);
 	if(errcode == CL_SUCCESS) printf("device name is %s\n",str_temp);
 	else printf("Error getting device name\n");
+
+	cl_mutable_dispatch_fields_khr mutable_capabilities;
+	errcode = clGetDeviceInfo(device_id, CL_DEVICE_MUTABLE_DISPATCH_CAPABILITIES_KHR,
+			   sizeof(mutable_capabilities), &mutable_capabilities, NULL);
+	if(errcode == CL_SUCCESS) printf("device name is %s\n",str_temp);
+	else printf("Error getting mutable capabilities\n");
+
+	if((mutable_capabilities & CL_MUTABLE_DISPATCH_ARGUMENTS_KHR) == 0) {
+		printf("skipped");
+		return 1;
+	}
 	
 	// Create an OpenCL context
 	clGPUContext = clCreateContext( NULL, 1, &device_id, NULL, NULL, &errcode);
@@ -123,6 +134,8 @@ void cl_initialization()
 	//Create a command-queue
 	clCommandQue = clCreateCommandQueue(clGPUContext, device_id, 0, &errcode);
 	if(errcode != CL_SUCCESS) printf("Error in creating command queue\n");
+
+	return 0;
 }
 
 
@@ -255,6 +268,11 @@ file = fopen("output.txt", "w");
 fprintf(file, "Non-Matching CPU-GPU Outputs Beyond Error Threshold of %4.2f Percent: %d\n", PERCENT_DIFF_ERROR_THRESHOLD, fail);
 fclose(file);
 
+	if (fail == 0)
+		printf("pass\n");
+	else
+		printf("fail\n");
+
 }
 
 
@@ -319,7 +337,8 @@ int main(void)
 	init(ni, nj, nk, POLYBENCH_ARRAY(A));
 
 	read_cl_file();
-	cl_initialization();
+	if (cl_initialization())
+		return 0;
 	cl_mem_init(POLYBENCH_ARRAY(A), POLYBENCH_ARRAY(B));
 	cl_load_prog();
 
