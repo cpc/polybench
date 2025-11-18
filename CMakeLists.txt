@@ -5,6 +5,7 @@ project(polybenchGPU)
 
 enable_testing()
 
+option(USE_SMALL_DATASET "Use very small dataset" ON)
 
 function(add_polybench_test THIS_TARGET SOURCE_PREFIX)
 add_executable(${THIS_TARGET} "${SOURCE_PREFIX}.c")
@@ -33,7 +34,9 @@ endfunction()
 add_compile_options("-DCL_TARGET_OPENCL_VERSION=300")
 add_compile_options("-DCL_USE_DEPRECATED_OPENCL_1_2_APIS")
 add_compile_options("-DCL_USE_DEPRECATED_OPENCL_1_1_APIS")
-add_compile_options("-DSMALL_DATASET=1")
+if(USE_SMALL_DATASET)
+  add_compile_options("-DSMALL_DATASET=1")
+endif()
 include_directories("${OPENCL_INCLUDE_PATH}")
 link_libraries("${OPENCL_opencl_LIBRARY}")
 link_libraries(m)
