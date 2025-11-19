@@ -6,6 +6,8 @@ project(polybenchGPU)
 enable_testing()
 
 option(USE_SMALL_DATASET "Use very small dataset" ON)
+option(ENABLE_VERIFICATION "Verify by generating golden results on CPU" ON)
+
 
 function(add_polybench_test THIS_TARGET SOURCE_PREFIX)
 add_executable(${THIS_TARGET} "${SOURCE_PREFIX}.c")
@@ -36,6 +38,9 @@ add_compile_options("-DCL_USE_DEPRECATED_OPENCL_1_2_APIS")
 add_compile_options("-DCL_USE_DEPRECATED_OPENCL_1_1_APIS")
 if(USE_SMALL_DATASET)
   add_compile_options("-DSMALL_DATASET=1")
+endif()
+if(ENABLE_VERIFICATION)
+  add_compile_options("-DRUN_ON_CPU")
 endif()
 include_directories("${OPENCL_INCLUDE_PATH}")
 link_libraries("${OPENCL_opencl_LIBRARY}")
