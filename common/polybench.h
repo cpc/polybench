@@ -198,5 +198,25 @@ extern void polybench_papi_print();
 /* Function prototypes. */
 extern void* polybench_alloc_data(unsigned long long int n, int elt_size);
 
+#ifdef ENQUEUE_ITERS
+#define polybench_enqueue_kernel(...) \
+for (size_t iter = 0; iter < ENQUEUE_ITERS; ++iter) errcode = errcode || clEnqueueNDRangeKernel(__VA_ARGS__)
+
+#define polybench_enqueue_kernel_with_factor(FACTOR, ...) \
+for (size_t iter = 0; iter < (ENQUEUE_ITERS/FACTOR + 1); ++iter) errcode = errcode || clEnqueueNDRangeKernel(__VA_ARGS__)
+
+#define polybench_enqueue_cmd_kernel(...) \
+for (size_t iter = 0; iter < ENQUEUE_ITERS; ++iter) errcode = errcode || clCommandNDRangeKernelKHR(__VA_ARGS__)
+
+#define polybench_enqueue_cmd_kernel_with_factor(FACTOR, ...) \
+for (size_t iter = 0; iter < (ENQUEUE_ITERS/FACTOR + 1); ++iter) errcode = errcode || clCommandNDRangeKernelKHR(__VA_ARGS__)
+
+#else
+#define polybench_enqueue_kernel(...)     errcode = clEnqueueNDRangeKernel(__VA_ARGS__)
+#define polybench_enqueue_cmd_kernel(...) errcode = clCommandNDRangeKernelKHR(__VA_ARGS__)
+#define polybench_enqueue_kernel_with_factor(FACTOR, ...)     errcode = clEnqueueNDRangeKernel(__VA_ARGS__)
+#define polybench_enqueue_cmd_kernel_with_factor(FACTOR, ...) errcode = clCommandNDRangeKernelKHR(__VA_ARGS__)
+#endif
+
 
 #endif /* !POLYBENCH_H */

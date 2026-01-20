@@ -251,7 +251,7 @@ void cl_launch_kernel(int n, DATA_TYPE alpha, DATA_TYPE beta)
 	if(errcode != CL_SUCCESS) printf("Error in seting arguments1\n");
 
 	// Execute the OpenCL kernel
-	errcode = clCommandNDRangeKernelKHR(command_buffer, clCommandQue, NULL, clKernel1, 1, NULL, globalWorkSize, localWorkSize, 0, NULL, NULL, NULL);
+	polybench_enqueue_cmd_kernel(command_buffer, clCommandQue, NULL, clKernel1, 1, NULL, globalWorkSize, localWorkSize, 0, NULL, NULL, NULL);
 	if(errcode != CL_SUCCESS) printf("Error in launching kernel1\n");
 
 	clFinalizeCommandBufferKHR(command_buffer);

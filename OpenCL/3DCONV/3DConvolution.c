@@ -179,7 +179,7 @@ void cl_launch_kernel(int ni, int nj, int nk)
 		errcode |= clSetKernelArg(clKernel, 5, sizeof(int), &i);
 
 		// Execute the OpenCL kernel
-		errcode = clEnqueueNDRangeKernel(clCommandQue, clKernel, 2, NULL, globalWorkSize, localWorkSize, 0, NULL, NULL);
+		polybench_enqueue_kernel(clCommandQue, clKernel, 2, NULL, globalWorkSize, localWorkSize, 0, NULL, NULL);
 	}
 
 	if(errcode != CL_SUCCESS) printf("Error in launching kernel\n");

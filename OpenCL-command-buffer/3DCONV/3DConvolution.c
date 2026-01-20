@@ -196,7 +196,7 @@ void cl_launch_kernel(int ni, int nj, int nk)
 	// Execute the OpenCL kernel
 	cl_command_properties_khr command_props[3] = { CL_MUTABLE_DISPATCH_UPDATABLE_FIELDS_KHR,
 		CL_MUTABLE_DISPATCH_ARGUMENTS_KHR, 0 };
-	errcode = clCommandNDRangeKernelKHR(command_buffer, clCommandQue, command_props, clKernel, 2, NULL, globalWorkSize, localWorkSize, 0, NULL, NULL, &command);
+	polybench_enqueue_cmd_kernel(command_buffer, clCommandQue, command_props, clKernel, 2, NULL, globalWorkSize, localWorkSize, 0, NULL, NULL, &command);
 
 	if(errcode != CL_SUCCESS) printf("Error in launching kernel\n");
 	clFinalizeCommandBufferKHR(command_buffer);

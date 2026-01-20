@@ -257,7 +257,7 @@ void cl_launch_kernel()
 	cl_command_properties_khr command_props[3] = { CL_MUTABLE_DISPATCH_UPDATABLE_FIELDS_KHR,
 		CL_MUTABLE_DISPATCH_ARGUMENTS_KHR, 0 };
 	// Execute the OpenCL kernel
-	errcode = clCommandNDRangeKernelKHR(command_buffer, clCommandQue, command_props, clKernel1, 2, NULL, globalWorkSize, localWorkSize, 0, NULL, NULL, &command);
+	polybench_enqueue_cmd_kernel(command_buffer, clCommandQue, command_props, clKernel1, 2, NULL, globalWorkSize, localWorkSize, 0, NULL, NULL, &command);
 	if(errcode != CL_SUCCESS) printf("Error in launching kernel1\n");
 
 	// Set the arguments of the kernel
@@ -271,7 +271,7 @@ void cl_launch_kernel()
 		0, 0 };
 	if(errcode != CL_SUCCESS) printf("Error in seting arguments1\n");
 	// Execute the OpenCL kernel
-	errcode = clCommandNDRangeKernelKHR(command_buffer, clCommandQue, command_props2, clKernel2, 2, NULL, globalWorkSize, localWorkSize, 0, NULL, NULL, NULL);
+	polybench_enqueue_cmd_kernel(command_buffer, clCommandQue, command_props2, clKernel2, 2, NULL, globalWorkSize, localWorkSize, 0, NULL, NULL, NULL);
 	if(errcode != CL_SUCCESS) printf("Error in launching kernel1\n");
 
 	// Set the arguments of the kernel
@@ -285,7 +285,7 @@ void cl_launch_kernel()
 
 	if(errcode != CL_SUCCESS) printf("Error in seting arguments1\n");
 	// Execute the OpenCL kernel
-	errcode = clCommandNDRangeKernelKHR(command_buffer, clCommandQue, command_props3, clKernel3, 2, NULL, globalWorkSize, localWorkSize, 0, NULL, NULL, NULL);
+	polybench_enqueue_cmd_kernel(command_buffer, clCommandQue, command_props3, clKernel3, 2, NULL, globalWorkSize, localWorkSize, 0, NULL, NULL, NULL);
 	if(errcode != CL_SUCCESS) printf("Error in launching kernel1\n");
 
 	clFinalizeCommandBufferKHR(command_buffer);

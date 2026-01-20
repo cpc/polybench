@@ -255,7 +255,7 @@ void cl_launch_kernel(int ni, int nj, int nk, int nl, DATA_TYPE alpha, DATA_TYPE
 	errcode |= clSetKernelArg(clKernel1, 8, sizeof(DATA_TYPE), (void *)&beta);
 	if(errcode != CL_SUCCESS) printf("Error in seting arguments\n");
 	// Execute the OpenCL kernel
-	errcode = clCommandNDRangeKernelKHR(command_buffer, clCommandQue, NULL, clKernel1, 2, NULL, globalWorkSize, localWorkSize, 0, NULL, NULL, NULL);
+	polybench_enqueue_cmd_kernel(command_buffer, clCommandQue, NULL, clKernel1, 2, NULL, globalWorkSize, localWorkSize, 0, NULL, NULL, NULL);
 	if(errcode != CL_SUCCESS) printf("Error in launching kernel\n");
 
 	globalWorkSize[0] = (size_t)ceil(((float)NI) / ((float)DIM_LOCAL_WORK_GROUP_X)) * DIM_LOCAL_WORK_GROUP_X;
@@ -273,7 +273,7 @@ void cl_launch_kernel(int ni, int nj, int nk, int nl, DATA_TYPE alpha, DATA_TYPE
 	if(errcode != CL_SUCCESS) printf("Error in seting arguments\n");
 
 	// Execute the OpenCL kernel
-	errcode = clCommandNDRangeKernelKHR(command_buffer, clCommandQue, NULL, clKernel2, 2, NULL, globalWorkSize, localWorkSize, 0, NULL, NULL, NULL);
+	polybench_enqueue_cmd_kernel(command_buffer, clCommandQue, NULL, clKernel2, 2, NULL, globalWorkSize, localWorkSize, 0, NULL, NULL, NULL);
 	if(errcode != CL_SUCCESS) printf("Error in launching kernel\n");
 
 	clFinalizeCommandBufferKHR(command_buffer);

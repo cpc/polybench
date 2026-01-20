@@ -247,7 +247,7 @@ void cl_launch_kernel()
 
 	// Execute the OpenCL kernel
 	//errcode = clEnqueueNDRangeKernel(clCommandQue, clKernel1, 1, NULL, globalWorkSizeKernel1, localWorkSize, 0, NULL, NULL);
-	errcode = clCommandNDRangeKernelKHR(command_buffer, clCommandQue, command_props1, clKernel1, 1, NULL, globalWorkSizeKernel1,
+	polybench_enqueue_cmd_kernel(command_buffer, clCommandQue, command_props1, clKernel1, 1, NULL, globalWorkSizeKernel1,
 				     localWorkSize, 0, NULL, NULL, &command1);
 	if(errcode != CL_SUCCESS) printf("Error in launching kernel1\n");
 
@@ -262,7 +262,7 @@ void cl_launch_kernel()
 
 	// Execute the OpenCL kernel
 	//errcode = clEnqueueNDRangeKernel(clCommandQue, clKernel2, 1, NULL, globalWorkSizeKernel2, localWorkSize, 0, NULL, NULL);
-	errcode = clCommandNDRangeKernelKHR(command_buffer, clCommandQue, command_props1, clKernel2, 1, NULL, globalWorkSizeKernel2,
+	polybench_enqueue_cmd_kernel(command_buffer, clCommandQue, command_props1, clKernel2, 1, NULL, globalWorkSizeKernel2,
 				     localWorkSize, 0, NULL, NULL, &command2);
 	if(errcode != CL_SUCCESS) printf("Error in launching kernel2\n");
 
@@ -283,7 +283,7 @@ void cl_launch_kernel()
 
 		// Execute the OpenCL kernel
 		//errcode = clEnqueueNDRangeKernel(clCommandQue, clKernel3, 1, NULL, globalWorkSizeKernel3, localWorkSize, 0, NULL, NULL);
-		errcode = clCommandNDRangeKernelKHR(command_buffer, clCommandQue, command_props2, clKernel3, 1, NULL, globalWorkSizeKernel3,
+		polybench_enqueue_cmd_kernel(command_buffer, clCommandQue, command_props2, clKernel3, 1, NULL, globalWorkSizeKernel3,
 				      localWorkSize, 0, NULL, NULL, &command3);
 		if(errcode != CL_SUCCESS) printf("Error in launching kernel3\n");
 	}

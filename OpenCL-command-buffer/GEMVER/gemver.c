@@ -251,7 +251,7 @@ void cl_launch_kernel()
 	size_t global_item_size = sizeof(DATA_TYPE) * N; 
 	size_t local_item_size = 64; 
 	// Execute the OpenCL kernel
-	errcode = clCommandNDRangeKernelKHR(command_buffer, clCommandQue, NULL, clKernel1, 2, NULL, globalWorkSize, localWorkSize, 0, NULL, NULL, NULL);
+	polybench_enqueue_cmd_kernel(command_buffer, clCommandQue, NULL, clKernel1, 2, NULL, globalWorkSize, localWorkSize, 0, NULL, NULL, NULL);
 	if(errcode != CL_SUCCESS) printf("Error in launching kernel1\n");
 
 	int dim = N;
@@ -271,7 +271,7 @@ void cl_launch_kernel()
 	if(errcode != CL_SUCCESS) printf("Error in seting arguments2\n");
 
 	// Execute the OpenCL kernel
-	errcode = clCommandNDRangeKernelKHR(command_buffer, clCommandQue, NULL, clKernel2, 1, NULL, globalWorkSize, localWorkSize, 0, NULL, NULL, NULL);
+	polybench_enqueue_cmd_kernel(command_buffer, clCommandQue, NULL, clKernel2, 1, NULL, globalWorkSize, localWorkSize, 0, NULL, NULL, NULL);
 	if(errcode != CL_SUCCESS) printf("Error in launching kernel2\n");
 	
 	localWorkSize[0] = DIM_LOCAL_WORK_GROUP_KERNEL_3_X;
@@ -288,7 +288,7 @@ void cl_launch_kernel()
 	if(errcode != CL_SUCCESS) printf("Error in seting arguments3\n");
 
 	// Execute the OpenCL kernel
-	errcode = clCommandNDRangeKernelKHR(command_buffer, clCommandQue, NULL, clKernel3, 1, NULL, globalWorkSize, localWorkSize, 0, NULL, NULL, NULL);
+	polybench_enqueue_cmd_kernel(command_buffer, clCommandQue, NULL, clKernel3, 1, NULL, globalWorkSize, localWorkSize, 0, NULL, NULL, NULL);
 	if(errcode != CL_SUCCESS) printf("Error in launching kernel3\n");
 	clFinalizeCommandBufferKHR(command_buffer);
 

@@ -245,7 +245,7 @@ void cl_launch_kernel(int ni, int nj, int nk, int nl, int nm)
 	if(errcode != CL_SUCCESS) printf("Error in seting arguments\n");
 	// Execute the OpenCL kernel
 
-	errcode = clEnqueueNDRangeKernel(clCommandQue, clKernel1, 2, NULL, globalWorkSize, localWorkSize, 0, NULL, NULL);	
+	polybench_enqueue_kernel(clCommandQue, clKernel1, 2, NULL, globalWorkSize, localWorkSize, 0, NULL, NULL);	
 	if(errcode != CL_SUCCESS) printf("Error in launching kernel\n");
 	clEnqueueBarrier(clCommandQue);
 
@@ -260,7 +260,7 @@ void cl_launch_kernel(int ni, int nj, int nk, int nl, int nm)
 	errcode |= clSetKernelArg(clKernel2, 5, sizeof(int), (void *)&nm);
 	if(errcode != CL_SUCCESS) printf("Error in seting arguments\n");
 	// Execute the OpenCL kernel
-	errcode = clEnqueueNDRangeKernel(clCommandQue, clKernel2, 2, NULL, globalWorkSize, localWorkSize, 0, NULL, NULL);	
+	polybench_enqueue_kernel(clCommandQue, clKernel2, 2, NULL, globalWorkSize, localWorkSize, 0, NULL, NULL);	
 	if(errcode != CL_SUCCESS) printf("Error in launching kernel\n");
 	clEnqueueBarrier(clCommandQue);
 
@@ -275,7 +275,7 @@ void cl_launch_kernel(int ni, int nj, int nk, int nl, int nm)
 	errcode |= clSetKernelArg(clKernel3, 5, sizeof(int), (void *)&nj);
 	if(errcode != CL_SUCCESS) printf("Error in seting arguments\n");
 	// Execute the OpenCL kernel
-	errcode = clEnqueueNDRangeKernel(clCommandQue, clKernel3, 2, NULL, globalWorkSize, localWorkSize, 0, NULL, NULL);	
+	polybench_enqueue_kernel(clCommandQue, clKernel3, 2, NULL, globalWorkSize, localWorkSize, 0, NULL, NULL);	
 	if(errcode != CL_SUCCESS) printf("Error in launching kernel\n");
 	clFinish(clCommandQue);
 
