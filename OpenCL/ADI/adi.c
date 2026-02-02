@@ -434,6 +434,25 @@ int main(void)
 	/* Start timer. */
   	polybench_start_instruments;
 
+	// warmup
+#if ENQUEUE_ITERS > 1
+	cl_launch_kernel1();
+
+	cl_launch_kernel2();
+
+	cl_launch_kernel3();
+
+	cl_launch_kernel4(1);
+
+	cl_launch_kernel5();
+
+	cl_launch_kernel6(0);
+	polybench_stop_instruments;
+	polybench_print_instruments;
+
+	polybench_start_instruments;
+#endif
+
 	int t, i1;
 
 	for (t = 0; t < TSTEPS; t++)

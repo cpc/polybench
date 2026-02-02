@@ -435,6 +435,33 @@ int main(void)
 		= clCreateCommandBufferKHR(1, &clCommandQue, props, &errcode);
 
 	int t, i1;
+	// warmup
+#if ENQUEUE_ITERS > 1
+	cl_launch_kernel1();
+
+	cl_launch_kernel2();
+
+	cl_launch_kernel3();
+
+	cl_launch_kernel4(1);
+
+	cl_launch_kernel5();
+
+	cl_launch_kernel6(0);
+
+	clFinalizeCommandBufferKHR(command_buffer);
+	clEnqueueCommandBufferKHR(0, NULL, command_buffer, 0, NULL, NULL);
+	clFinish(clCommandQue);
+
+	polybench_stop_instruments;
+	polybench_print_instruments;
+
+	clReleaseCommandBufferKHR(command_buffer);
+	command_buffer
+		= clCreateCommandBufferKHR(1, &clCommandQue, props, &errcode);
+
+	polybench_start_instruments;
+#endif
 
 	cl_launch_kernel1();
 

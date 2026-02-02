@@ -302,6 +302,17 @@ int main(void)
 	/* Start timer. */
   	polybench_start_instruments;
 
+// warmup
+#if ENQUEUE_ITERS > 1
+	cl_launch_kernel1(0, n);
+	cl_launch_kernel2(0, n);
+
+	polybench_stop_instruments;
+	polybench_print_instruments;
+
+	polybench_start_instruments;
+#endif
+
 	int k;
 	for (k = 0; k < _PB_N; k++)
     	{

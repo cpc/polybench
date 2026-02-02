@@ -285,7 +285,7 @@ int main(int argc, char *argv[])
 	cl_mem_init(POLYBENCH_ARRAY(A));
 	cl_load_prog();
 
-	cl_launch_kernel(ni, nj);
+	CL_LAUNCH(ni, nj);
 
 	errcode = clEnqueueReadBuffer(clCommandQue, b_mem_obj, CL_TRUE, 0, NI*NJ*sizeof(DATA_TYPE), POLYBENCH_ARRAY(B_outputFromGpu), 0, NULL, NULL);
 	if(errcode != CL_SUCCESS) printf("Error in reading GPU mem\n");

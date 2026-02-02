@@ -318,6 +318,20 @@ int main(void)
 	/* Start timer. */
 	polybench_start_instruments;
 
+	// warmup
+#if ENQUEUE_ITERS > 1
+	clEnqueueCommandBufferKHR(0, NULL, command_buffer, 0, NULL, NULL);
+
+	clFinish(clCommandQue);
+
+	/* Stop and print timer. */
+	printf("GPU Time in seconds:\n");
+	polybench_stop_instruments;
+	polybench_print_instruments;
+
+	polybench_start_instruments;
+#endif
+
 	for (k = 0; k < _PB_N - 1; k++)
 	{
 		size_t globalWorkSize1[2];

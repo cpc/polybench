@@ -5,6 +5,9 @@
  * Contact: Louis-Noel Pouchet <pouchet@cse.ohio-state.edu>
  * Web address: http://polybench.sourceforge.net
  */
+#ifndef _DEFAULT_SOURCE
+#define _DEFAULT_SOURCE
+#endif
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -55,7 +58,24 @@ unsigned long long int polybench_c_start, polybench_c_end;
 static
 double rtclock()
 {
-#ifdef POLYBENCH_TIME
+#if _POSIX_TIMERS > 0
+    struct timespec TS = {0};
+    int res;
+#ifdef _POSIX_CPUTIME
+    res = clock_gettime(CLOCK_PROCESS_CPUTIME_ID, &TS);
+    if (res)
+#endif
+#ifdef _POSIX_MONOTONIC_CLOCK
+    res = clock_gettime(CLOCK_MONOTONIC, &TS);
+    if (res)
+#endif
+    res = clock_gettime(CLOCK_REALTIME, &TS);
+    if (res == 0)
+    {
+        return ((double)TS.tv_sec + TS.tv_nsec * 1.0e-9);
+    }
+#endif
+#if POLYBENCH_TIME
     struct timeval Tp;
     int stat;
     stat = gettimeofday (&Tp, NULL);
@@ -352,9 +372,17 @@ void polybench_timer_stop()
 #endif
 }
 
+static int first_run = 0;
+
+int polybench_timer_is_first_run() {
+    return first_run;
+}
 
 void polybench_timer_print()
 {
+  if (first_run == 0) {
+    first_run = 1; return;
+  }
 #ifdef POLYBENCH_GFLOPS
       if  (__polybench_program_total_flops == 0)
 	{

@@ -339,6 +339,25 @@ int main(void)
 	/* Start timer. */
   	polybench_start_instruments;
 
+	// warmup
+#if ENQUEUE_ITERS > 1
+
+	clEnqueueCommandBufferKHR(0, NULL, command_buffer, 0, NULL, NULL);
+	clFinish(clCommandQue);
+
+	polybench_stop_instruments;
+	polybench_print_instruments;
+
+	clReleaseCommandBufferKHR(command_buffer);
+	command_buffer
+		= clCreateCommandBufferKHR(1, &clCommandQue, props, &errcode);
+	cl_launch_kernel1(n);
+	cl_launch_kernel2(n);
+	clFinalizeCommandBufferKHR(command_buffer);
+
+	polybench_start_instruments;
+#endif
+
 	int t;
 	for (t = 0; t < _PB_TSTEPS ; t++)
     	{

@@ -177,6 +177,7 @@ extern double polybench_program_total_flops;
 extern void polybench_timer_start();
 extern void polybench_timer_stop();
 extern void polybench_timer_print();
+extern int polybench_timer_is_first_run();
 # endif
 
 /* Function declaration. */
@@ -198,24 +199,28 @@ extern void polybench_papi_print();
 /* Function prototypes. */
 extern void* polybench_alloc_data(unsigned long long int n, int elt_size);
 
-#ifdef ENQUEUE_ITERS
+#if ENQUEUE_ITERS > 1
 #define polybench_enqueue_kernel(...) \
-for (size_t iter = 0; iter < ENQUEUE_ITERS; ++iter) errcode = errcode || clEnqueueNDRangeKernel(__VA_ARGS__)
+for (size_t iter = 0; iter < (ENQUEUE_ITERS * polybench_timer_is_first_run() + 1); ++iter) errcode = errcode || clEnqueueNDRangeKernel(__VA_ARGS__)
 
 #define polybench_enqueue_kernel_with_factor(FACTOR, ...) \
-for (size_t iter = 0; iter < (ENQUEUE_ITERS/FACTOR + 1); ++iter) errcode = errcode || clEnqueueNDRangeKernel(__VA_ARGS__)
+for (size_t iter = 0; iter < ((ENQUEUE_ITERS/FACTOR + 1) * polybench_timer_is_first_run() + 1); ++iter) errcode = errcode || clEnqueueNDRangeKernel(__VA_ARGS__)
 
 #define polybench_enqueue_cmd_kernel(...) \
-for (size_t iter = 0; iter < ENQUEUE_ITERS; ++iter) errcode = errcode || clCommandNDRangeKernelKHR(__VA_ARGS__)
+for (size_t iter = 0; iter < (ENQUEUE_ITERS  * polybench_timer_is_first_run() + 1); ++iter) errcode = errcode || clCommandNDRangeKernelKHR(__VA_ARGS__)
 
 #define polybench_enqueue_cmd_kernel_with_factor(FACTOR, ...) \
-for (size_t iter = 0; iter < (ENQUEUE_ITERS/FACTOR + 1); ++iter) errcode = errcode || clCommandNDRangeKernelKHR(__VA_ARGS__)
+for (size_t iter = 0; iter < ((ENQUEUE_ITERS/FACTOR + 1) * polybench_timer_is_first_run() + 1); ++iter) errcode = errcode || clCommandNDRangeKernelKHR(__VA_ARGS__)
+
+// launch twice. The first run will pre-compile the kernels.
+#define CL_LAUNCH(...) cl_launch_kernel(__VA_ARGS__); cl_launch_kernel(__VA_ARGS__);
 
 #else
 #define polybench_enqueue_kernel(...)     errcode = clEnqueueNDRangeKernel(__VA_ARGS__)
 #define polybench_enqueue_cmd_kernel(...) errcode = clCommandNDRangeKernelKHR(__VA_ARGS__)
 #define polybench_enqueue_kernel_with_factor(FACTOR, ...)     errcode = clEnqueueNDRangeKernel(__VA_ARGS__)
 #define polybench_enqueue_cmd_kernel_with_factor(FACTOR, ...) errcode = clCommandNDRangeKernelKHR(__VA_ARGS__)
+#define CL_LAUNCH(...) cl_launch_kernel(__VA_ARGS__);
 #endif
 
 
