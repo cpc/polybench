@@ -325,7 +325,7 @@ int main(void)
 	clFinish(clCommandQue);
 
 	/* Stop and print timer. */
-	printf("GPU Time in seconds:\n");
+	polybench_gpu_time_header();
 	polybench_stop_instruments;
 	polybench_print_instruments;
 
@@ -353,7 +353,7 @@ int main(void)
 	clFinish(clCommandQue);
 
 	/* Stop and print timer. */
-	printf("GPU Time in seconds:\n");
+	polybench_gpu_time_header();
   	polybench_stop_instruments;
  	polybench_print_instruments;
 

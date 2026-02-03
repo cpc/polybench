@@ -239,7 +239,7 @@ void cl_launch_kernel(int ni, int nj, DATA_TYPE alpha, DATA_TYPE beta)
 	clFinish(clCommandQue);
 
 	/* Stop and print timer. */
-	printf("GPU Time in seconds:\n");
+	polybench_gpu_time_header();
   	polybench_stop_instruments;
  	polybench_print_instruments;
 }

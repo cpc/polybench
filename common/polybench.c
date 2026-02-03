@@ -372,17 +372,33 @@ void polybench_timer_stop()
 #endif
 }
 
+#if ENQUEUE_ITERS > 1
 static int first_run = 0;
+#endif
+
+void polybench_gpu_time_header()
+{
+#if ENQUEUE_ITERS > 1
+	if (!first_run)
+#endif
+	printf("GPU Time in seconds:\n");
+}
 
 int polybench_timer_is_first_run() {
-    return first_run;
+#if ENQUEUE_ITERS > 1
+	return first_run;
+#else
+	return 0;
+#endif
 }
 
 void polybench_timer_print()
 {
+#if ENQUEUE_ITERS > 1
   if (first_run == 0) {
     first_run = 1; return;
   }
+#endif
 #ifdef POLYBENCH_GFLOPS
       if  (__polybench_program_total_flops == 0)
 	{

@@ -137,7 +137,7 @@
 # define polybench_start_instruments
 # define polybench_stop_instruments
 # define polybench_print_instruments
-
+extern void polybench_gpu_time_header();
 
 /* PAPI support. */
 # ifdef POLYBENCH_PAPI

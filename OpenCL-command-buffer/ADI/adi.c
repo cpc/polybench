@@ -492,7 +492,7 @@ int main(void)
 	clFinish(clCommandQue);
 	/* Stop and print timer. */
   	polybench_stop_instruments;
-	printf("GPU Time in seconds:\n");
+	polybench_gpu_time_header();
  	polybench_print_instruments;
 
 	errcode = clEnqueueReadBuffer(clCommandQue, b_mem_obj, CL_TRUE, 0, mem_size_B, POLYBENCH_ARRAY(B1), 0, NULL, NULL);
